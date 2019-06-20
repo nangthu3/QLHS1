@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Id>1</Id>
+    <Name>Nguyen Van A</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1845102+07:00</Birthday>
+    <Address>Ha Noi</Address>
+  </Student>
+  <Student>
+    <Id>2</Id>
+    <Name>Nguyen Van B</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1856949+07:00</Birthday>
+    <Address>Ha Nam</Address>
+  </Student>
+  <Student>
+    <Id>3</Id>
+    <Name>Nguyen Van C</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1856958+07:00</Birthday>
+    <Address>Nam Dinh</Address>
+  </Student>
+  <Student>
+    <Id>4</Id>
+    <Name>Nguyen Thi D</Name>
+    <Gender>0</Gender>
+    <Birthday>2019-06-20T23:22:53.185696+07:00</Birthday>
+    <Address>Ninh Binh</Address>
+  </Student>
+  <Student>
+    <Id>5</Id>
+    <Name>Nguyen Thi E</Name>
+    <Gender>0</Gender>
+    <Birthday>2019-06-20T23:22:53.1856962+07:00</Birthday>
+    <Address>Ha Giang</Address>
+  </Student>
+  <Student>
+    <Id>6</Id>
+    <Name>Nguyen Thi F</Name>
+    <Gender>0</Gender>
+    <Birthday>2019-06-20T23:22:53.1857072+07:00</Birthday>
+    <Address>Thanh Hoa</Address>
+  </Student>
+  <Student>
+    <Id>7</Id>
+    <Name>Le Thi G</Name>
+    <Gender>0</Gender>
+    <Birthday>2019-06-20T23:22:53.1857074+07:00</Birthday>
+    <Address>Nghe An</Address>
+  </Student>
+  <Student>
+    <Id>8</Id>
+    <Name>Tran Van H</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1857075+07:00</Birthday>
+    <Address>Thai Binh</Address>
+  </Student>
+  <Student>
+    <Id>9</Id>
+    <Name>Tran Van I</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1857077+07:00</Birthday>
+    <Address>Hai Duong</Address>
+  </Student>
+  <Student>
+    <Id>10</Id>
+    <Name>Tran Thi K</Name>
+    <Gender>0</Gender>
+    <Birthday>2019-06-20T23:22:53.1857078+07:00</Birthday>
+    <Address>Quang Ninh</Address>
+  </Student>
+</ArrayOfStudent>
