@@ -63,11 +63,4 @@
     <Birthday>2019-06-20T23:22:53.1857078+07:00</Birthday>
     <Address>Quang Ninh</Address>
   </Student>
-  <Student>
-    <Id>1</Id>
-    <Name>Nguyễn Văn Anh</Name>
-    <Gender>1</Gender>
-    <Birthday>2019-06-20T23:22:53.1845102+07:00</Birthday>
-    <Address>Hà Nội</Address>
-  </Student>
 </ArrayOfStudent>

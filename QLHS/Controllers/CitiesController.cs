@@ -8,9 +8,11 @@ using Newtonsoft.Json.Linq;
 using QLHS.Models;
 using System.IO;
 using System.Xml.Serialization;
+using Microsoft.AspNetCore.Cors;
 
 namespace QLHS.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class CitiesController : ControllerBase

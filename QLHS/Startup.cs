@@ -29,6 +29,16 @@ namespace QLHS
         {
             services.AddDbContext<StudentContext>(opt => opt.UseInMemoryDatabase("StudentList"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +55,8 @@ namespace QLHS
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            //app.UseCors(builder => builder.WithOrigins(new string[] { "http://localhost:4200" }));
+            app.UseCors("CorsPolicy");
         }
     }
 }

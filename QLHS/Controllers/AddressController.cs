@@ -5,12 +5,14 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using QLHS.Models;
 
 namespace QLHS.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class AddressController : ControllerBase
@@ -79,7 +81,6 @@ namespace QLHS.Controllers
             if (district != null) return district;
             return NotFound();
         }
-
 
     }
 }

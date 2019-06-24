@@ -15,11 +15,11 @@ namespace QLHS.Controllers
     [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentsController : ControllerBase
+    public class NewStudentsController : ControllerBase
     {
         private XmlSerializer xmlSerializer;
-        private List<Student> students;
-        public StudentsController()
+        private List<NewStudent> students;
+        public NewStudentsController()
         {
             xmlSerializer = new XmlSerializer(typeof(List<Student>));
             if (students == null || students.Count == 0)
@@ -28,10 +28,10 @@ namespace QLHS.Controllers
             }
         }
 
-        public List<Student> getAllStudents()
+        public List<NewStudent> getAllStudents()
         {
             FileStream stream = System.IO.File.OpenRead("App_Data/students.xml");
-            students = (List<Student>)xmlSerializer.Deserialize(stream);
+            students = (List<NewStudent>)xmlSerializer.Deserialize(stream);
             stream.Close();
             return students;
         }
@@ -47,13 +47,13 @@ namespace QLHS.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudent()
+        public async Task<ActionResult<IEnumerable<NewStudent>>> GetStudent()
         {
             return getAllStudents();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudentById(long id)
+        public async Task<ActionResult<NewStudent>> GetStudentById(long id)
         {
             students = getAllStudents();
             var student = students.Find(st => st.Id == id);
@@ -66,7 +66,7 @@ namespace QLHS.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Student>> PostStudent(Student student)
+        public async Task<ActionResult<Student>> PostStudent(NewStudent student)
         {
             students = getAllStudents();
             if (students == null || students.Count == 0)
@@ -80,7 +80,7 @@ namespace QLHS.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> PutStudent(long id, Student student)
+        public async Task<ActionResult> PutStudent(long id, NewStudent student)
         {
             if (id != student.Id)
             {
