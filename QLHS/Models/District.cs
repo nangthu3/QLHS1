@@ -5,12 +5,10 @@ using System.Threading.Tasks;
 
 namespace QLHS.Models
 {
-    public class Student
+    public class District
     {
         public long Id { get; set; }
+        public long CitiId { get; set; }
         public string Name { get; set; }
-        public int Gender { get; set; }
-        public DateTime Birthday { get; set; }
-        public string Address { get; set; }
     }
 }

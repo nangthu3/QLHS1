@@ -28,7 +28,6 @@ namespace QLHS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StudentContext>(opt => opt.UseInMemoryDatabase("StudentList"));
-            //services.Add
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

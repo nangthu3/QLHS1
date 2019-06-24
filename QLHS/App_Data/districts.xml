@@ -1,0 +1,3493 @@
+<?xml version="1.0"?>
+<ArrayOfDistrict xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <District>
+    <Id>66</Id>
+    <CitiId>1</CitiId>
+    <Name>Huyện Cờ Đỏ</Name>
+  </District>
+  <District>
+    <Id>67</Id>
+    <CitiId>1</CitiId>
+    <Name>Huyện Phong Điền</Name>
+  </District>
+  <District>
+    <Id>68</Id>
+    <CitiId>1</CitiId>
+    <Name>Huyện Thới Lai</Name>
+  </District>
+  <District>
+    <Id>69</Id>
+    <CitiId>1</CitiId>
+    <Name>Huyện Vĩnh Thạnh</Name>
+  </District>
+  <District>
+    <Id>70</Id>
+    <CitiId>1</CitiId>
+    <Name>Quận Bình Thủy</Name>
+  </District>
+  <District>
+    <Id>71</Id>
+    <CitiId>1</CitiId>
+    <Name>Quận Cái Răng</Name>
+  </District>
+  <District>
+    <Id>72</Id>
+    <CitiId>1</CitiId>
+    <Name>Quận Ninh Kiều</Name>
+  </District>
+  <District>
+    <Id>73</Id>
+    <CitiId>1</CitiId>
+    <Name>Quận Ô Môn</Name>
+  </District>
+  <District>
+    <Id>74</Id>
+    <CitiId>1</CitiId>
+    <Name>Quận Thốt Nốt</Name>
+  </District>
+  <District>
+    <Id>76</Id>
+    <CitiId>2</CitiId>
+    <Name>Huyện Hòa Vang</Name>
+  </District>
+  <District>
+    <Id>77</Id>
+    <CitiId>2</CitiId>
+    <Name>Huyện Hoàng Sa</Name>
+  </District>
+  <District>
+    <Id>78</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Cẩm Lệ</Name>
+  </District>
+  <District>
+    <Id>79</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Hải Châu</Name>
+  </District>
+  <District>
+    <Id>80</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Liên Chiểu</Name>
+  </District>
+  <District>
+    <Id>81</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Ngũ Hành Sơn</Name>
+  </District>
+  <District>
+    <Id>82</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Sơn Trà</Name>
+  </District>
+  <District>
+    <Id>83</Id>
+    <CitiId>2</CitiId>
+    <Name>Quận Thanh Khê</Name>
+  </District>
+  <District>
+    <Id>85</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Ba Vì</Name>
+  </District>
+  <District>
+    <Id>86</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Chương Mỹ</Name>
+  </District>
+  <District>
+    <Id>87</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Đan Phượng</Name>
+  </District>
+  <District>
+    <Id>88</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Đông Anh</Name>
+  </District>
+  <District>
+    <Id>89</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Gia Lâm</Name>
+  </District>
+  <District>
+    <Id>90</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Hoài Đức</Name>
+  </District>
+  <District>
+    <Id>91</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Mê Linh</Name>
+  </District>
+  <District>
+    <Id>92</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Mỹ Đức</Name>
+  </District>
+  <District>
+    <Id>93</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Phú Xuyên</Name>
+  </District>
+  <District>
+    <Id>94</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Phúc Thọ</Name>
+  </District>
+  <District>
+    <Id>95</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Quốc Oai</Name>
+  </District>
+  <District>
+    <Id>96</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Sóc Sơn</Name>
+  </District>
+  <District>
+    <Id>97</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Thạch Thất</Name>
+  </District>
+  <District>
+    <Id>98</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Thanh Oai</Name>
+  </District>
+  <District>
+    <Id>99</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Thanh Trì</Name>
+  </District>
+  <District>
+    <Id>100</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Thường Tín</Name>
+  </District>
+  <District>
+    <Id>101</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện Từ Liêm</Name>
+  </District>
+  <District>
+    <Id>102</Id>
+    <CitiId>3</CitiId>
+    <Name>Huyện ứng Hòa</Name>
+  </District>
+  <District>
+    <Id>103</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Ba Đình</Name>
+  </District>
+  <District>
+    <Id>104</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Cầu Giấy</Name>
+  </District>
+  <District>
+    <Id>105</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Đống Đa</Name>
+  </District>
+  <District>
+    <Id>106</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Hà Đông</Name>
+  </District>
+  <District>
+    <Id>107</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Hai Bà Trưng</Name>
+  </District>
+  <District>
+    <Id>108</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Hoàn Kiếm</Name>
+  </District>
+  <District>
+    <Id>109</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Hoàng Mai</Name>
+  </District>
+  <District>
+    <Id>110</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Long Biên</Name>
+  </District>
+  <District>
+    <Id>111</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Tây Hồ</Name>
+  </District>
+  <District>
+    <Id>112</Id>
+    <CitiId>3</CitiId>
+    <Name>Quận Thanh Xuân</Name>
+  </District>
+  <District>
+    <Id>113</Id>
+    <CitiId>3</CitiId>
+    <Name>Thị xã Sơn Tây</Name>
+  </District>
+  <District>
+    <Id>115</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện An Dương</Name>
+  </District>
+  <District>
+    <Id>116</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện An Lão</Name>
+  </District>
+  <District>
+    <Id>117</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Bạch Long Vĩ</Name>
+  </District>
+  <District>
+    <Id>118</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Cát Hải</Name>
+  </District>
+  <District>
+    <Id>119</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Kiến Thụy</Name>
+  </District>
+  <District>
+    <Id>120</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Thủy Nguyên</Name>
+  </District>
+  <District>
+    <Id>121</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Tiên Lãng</Name>
+  </District>
+  <District>
+    <Id>122</Id>
+    <CitiId>4</CitiId>
+    <Name>Huyện Vĩnh Bảo</Name>
+  </District>
+  <District>
+    <Id>123</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Đồ Sơn</Name>
+  </District>
+  <District>
+    <Id>124</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Dương Kinh</Name>
+  </District>
+  <District>
+    <Id>125</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Hải An</Name>
+  </District>
+  <District>
+    <Id>126</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Hồng Bàng</Name>
+  </District>
+  <District>
+    <Id>127</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Kiến An</Name>
+  </District>
+  <District>
+    <Id>128</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Lê Chân</Name>
+  </District>
+  <District>
+    <Id>129</Id>
+    <CitiId>4</CitiId>
+    <Name>Quận Ngô Quyền</Name>
+  </District>
+  <District>
+    <Id>131</Id>
+    <CitiId>5</CitiId>
+    <Name>Huyện Bình Chánh</Name>
+  </District>
+  <District>
+    <Id>132</Id>
+    <CitiId>5</CitiId>
+    <Name>Huyện Cần Giờ</Name>
+  </District>
+  <District>
+    <Id>133</Id>
+    <CitiId>5</CitiId>
+    <Name>Huyện Củ Chi</Name>
+  </District>
+  <District>
+    <Id>134</Id>
+    <CitiId>5</CitiId>
+    <Name>Huyện Hóc Môn</Name>
+  </District>
+  <District>
+    <Id>135</Id>
+    <CitiId>5</CitiId>
+    <Name>Huyện Nhà Bè</Name>
+  </District>
+  <District>
+    <Id>136</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 1</Name>
+  </District>
+  <District>
+    <Id>137</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 10</Name>
+  </District>
+  <District>
+    <Id>138</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 11</Name>
+  </District>
+  <District>
+    <Id>139</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 12</Name>
+  </District>
+  <District>
+    <Id>140</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 2</Name>
+  </District>
+  <District>
+    <Id>141</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 3</Name>
+  </District>
+  <District>
+    <Id>142</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 4</Name>
+  </District>
+  <District>
+    <Id>143</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 5</Name>
+  </District>
+  <District>
+    <Id>144</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 6</Name>
+  </District>
+  <District>
+    <Id>145</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 7</Name>
+  </District>
+  <District>
+    <Id>146</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 8</Name>
+  </District>
+  <District>
+    <Id>147</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận 9</Name>
+  </District>
+  <District>
+    <Id>148</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Bình Tân</Name>
+  </District>
+  <District>
+    <Id>149</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Bình Thạnh</Name>
+  </District>
+  <District>
+    <Id>150</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Gò Vấp</Name>
+  </District>
+  <District>
+    <Id>151</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Phú Nhuận</Name>
+  </District>
+  <District>
+    <Id>152</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Tân Bình</Name>
+  </District>
+  <District>
+    <Id>153</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Tân Phú</Name>
+  </District>
+  <District>
+    <Id>154</Id>
+    <CitiId>5</CitiId>
+    <Name>Quận Thủ Đức</Name>
+  </District>
+  <District>
+    <Id>155</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện An Phú</Name>
+  </District>
+  <District>
+    <Id>156</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Châu Phú</Name>
+  </District>
+  <District>
+    <Id>157</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>158</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Chợ Mới</Name>
+  </District>
+  <District>
+    <Id>159</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Phú Tân</Name>
+  </District>
+  <District>
+    <Id>160</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Thoại Sơn</Name>
+  </District>
+  <District>
+    <Id>161</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Tịnh Biên</Name>
+  </District>
+  <District>
+    <Id>162</Id>
+    <CitiId>6</CitiId>
+    <Name>Huyện Tri Tôn</Name>
+  </District>
+  <District>
+    <Id>163</Id>
+    <CitiId>6</CitiId>
+    <Name>Thành phố Long Xuyên</Name>
+  </District>
+  <District>
+    <Id>164</Id>
+    <CitiId>6</CitiId>
+    <Name>Thị xã Châu Đốc</Name>
+  </District>
+  <District>
+    <Id>165</Id>
+    <CitiId>6</CitiId>
+    <Name>Thị xã Tân Châu</Name>
+  </District>
+  <District>
+    <Id>166</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Châu Đức</Name>
+  </District>
+  <District>
+    <Id>167</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Côn Đảo</Name>
+  </District>
+  <District>
+    <Id>168</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Đất Đỏ</Name>
+  </District>
+  <District>
+    <Id>169</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Long Điền</Name>
+  </District>
+  <District>
+    <Id>170</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Tân Thành</Name>
+  </District>
+  <District>
+    <Id>171</Id>
+    <CitiId>7</CitiId>
+    <Name>Huyện Xuyên Mộc</Name>
+  </District>
+  <District>
+    <Id>172</Id>
+    <CitiId>7</CitiId>
+    <Name>Thành phố Vũng Tàu</Name>
+  </District>
+  <District>
+    <Id>173</Id>
+    <CitiId>7</CitiId>
+    <Name>Thị xã Bà Rịa</Name>
+  </District>
+  <District>
+    <Id>174</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Hiệp Hòa</Name>
+  </District>
+  <District>
+    <Id>175</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Lạng Giang</Name>
+  </District>
+  <District>
+    <Id>176</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Lục Nam</Name>
+  </District>
+  <District>
+    <Id>177</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Lục Ngạn</Name>
+  </District>
+  <District>
+    <Id>178</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Sơn Động</Name>
+  </District>
+  <District>
+    <Id>179</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Tân Yên</Name>
+  </District>
+  <District>
+    <Id>180</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Việt Yên</Name>
+  </District>
+  <District>
+    <Id>181</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Yên Dũng</Name>
+  </District>
+  <District>
+    <Id>182</Id>
+    <CitiId>8</CitiId>
+    <Name>Huyện Yên Thế</Name>
+  </District>
+  <District>
+    <Id>183</Id>
+    <CitiId>8</CitiId>
+    <Name>Thành phố Bắc Giang</Name>
+  </District>
+  <District>
+    <Id>184</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Ba Bể</Name>
+  </District>
+  <District>
+    <Id>185</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Bạch Thông</Name>
+  </District>
+  <District>
+    <Id>186</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Chợ Đồn</Name>
+  </District>
+  <District>
+    <Id>187</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Chợ Mới</Name>
+  </District>
+  <District>
+    <Id>188</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Na Rì</Name>
+  </District>
+  <District>
+    <Id>189</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Ngân Sơn</Name>
+  </District>
+  <District>
+    <Id>190</Id>
+    <CitiId>9</CitiId>
+    <Name>Huyện Pác Nặm</Name>
+  </District>
+  <District>
+    <Id>191</Id>
+    <CitiId>9</CitiId>
+    <Name>Thị xã Bắc Kạn</Name>
+  </District>
+  <District>
+    <Id>192</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Đông Hải</Name>
+  </District>
+  <District>
+    <Id>193</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Giá Rai</Name>
+  </District>
+  <District>
+    <Id>194</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Hòa Bình</Name>
+  </District>
+  <District>
+    <Id>195</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Hồng Dân</Name>
+  </District>
+  <District>
+    <Id>196</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Phước Long</Name>
+  </District>
+  <District>
+    <Id>197</Id>
+    <CitiId>10</CitiId>
+    <Name>Huyện Vĩnh Lợi</Name>
+  </District>
+  <District>
+    <Id>198</Id>
+    <CitiId>10</CitiId>
+    <Name>Thành Phố Bạc Liêu</Name>
+  </District>
+  <District>
+    <Id>199</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Gia Bình</Name>
+  </District>
+  <District>
+    <Id>200</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Lương Tài</Name>
+  </District>
+  <District>
+    <Id>201</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Quế Võ</Name>
+  </District>
+  <District>
+    <Id>202</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Thuận Thành</Name>
+  </District>
+  <District>
+    <Id>203</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Tiên Du</Name>
+  </District>
+  <District>
+    <Id>204</Id>
+    <CitiId>11</CitiId>
+    <Name>Huyện Yên Phong</Name>
+  </District>
+  <District>
+    <Id>205</Id>
+    <CitiId>11</CitiId>
+    <Name>Thành phố Bắc Ninh</Name>
+  </District>
+  <District>
+    <Id>206</Id>
+    <CitiId>11</CitiId>
+    <Name>Thị xã Từ Sơn</Name>
+  </District>
+  <District>
+    <Id>207</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Ba Tri</Name>
+  </District>
+  <District>
+    <Id>208</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Bình Đại</Name>
+  </District>
+  <District>
+    <Id>209</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>210</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Chợ Lách</Name>
+  </District>
+  <District>
+    <Id>211</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Giồng Trôm</Name>
+  </District>
+  <District>
+    <Id>212</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Mỏ Cày Bắc</Name>
+  </District>
+  <District>
+    <Id>213</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Mỏ Cày Nam</Name>
+  </District>
+  <District>
+    <Id>214</Id>
+    <CitiId>12</CitiId>
+    <Name>Huyện Thạnh Phú</Name>
+  </District>
+  <District>
+    <Id>215</Id>
+    <CitiId>12</CitiId>
+    <Name>Thành phố Bến Tre</Name>
+  </District>
+  <District>
+    <Id>216</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện An Lão</Name>
+  </District>
+  <District>
+    <Id>217</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện An Nhơn</Name>
+  </District>
+  <District>
+    <Id>218</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Hoài  Ân</Name>
+  </District>
+  <District>
+    <Id>219</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Hoài Nhơn</Name>
+  </District>
+  <District>
+    <Id>220</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Phù Mỹ</Name>
+  </District>
+  <District>
+    <Id>221</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Phù cát</Name>
+  </District>
+  <District>
+    <Id>222</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Tây Sơn</Name>
+  </District>
+  <District>
+    <Id>223</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Tuy Phước</Name>
+  </District>
+  <District>
+    <Id>224</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Vân Canh</Name>
+  </District>
+  <District>
+    <Id>225</Id>
+    <CitiId>13</CitiId>
+    <Name>Huyện Vĩnh Thạnh</Name>
+  </District>
+  <District>
+    <Id>226</Id>
+    <CitiId>13</CitiId>
+    <Name>Thành phố Quy Nhơn</Name>
+  </District>
+  <District>
+    <Id>227</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Bến Cát</Name>
+  </District>
+  <District>
+    <Id>228</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Dầu Tiếng</Name>
+  </District>
+  <District>
+    <Id>229</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Dĩ An</Name>
+  </District>
+  <District>
+    <Id>230</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Phú Giáo</Name>
+  </District>
+  <District>
+    <Id>231</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Tân Uyên</Name>
+  </District>
+  <District>
+    <Id>232</Id>
+    <CitiId>14</CitiId>
+    <Name>Huyện Thuận An</Name>
+  </District>
+  <District>
+    <Id>233</Id>
+    <CitiId>14</CitiId>
+    <Name>Thị xã Thủ Dầu Một</Name>
+  </District>
+  <District>
+    <Id>234</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Bù Đăng</Name>
+  </District>
+  <District>
+    <Id>235</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Bù Đốp</Name>
+  </District>
+  <District>
+    <Id>236</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Bù Gia Mập</Name>
+  </District>
+  <District>
+    <Id>237</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Chơn Thành</Name>
+  </District>
+  <District>
+    <Id>238</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Đồng Phú</Name>
+  </District>
+  <District>
+    <Id>239</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Hớn Quản</Name>
+  </District>
+  <District>
+    <Id>240</Id>
+    <CitiId>15</CitiId>
+    <Name>Huyện Lộc Ninh</Name>
+  </District>
+  <District>
+    <Id>241</Id>
+    <CitiId>15</CitiId>
+    <Name>Thị xã Bình Long</Name>
+  </District>
+  <District>
+    <Id>242</Id>
+    <CitiId>15</CitiId>
+    <Name>Thị xã Đồng Xoài</Name>
+  </District>
+  <District>
+    <Id>243</Id>
+    <CitiId>15</CitiId>
+    <Name>Thị xã Phước Long</Name>
+  </District>
+  <District>
+    <Id>244</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện  Đức Linh</Name>
+  </District>
+  <District>
+    <Id>245</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Bắc Bình</Name>
+  </District>
+  <District>
+    <Id>246</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Hàm Tân</Name>
+  </District>
+  <District>
+    <Id>247</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Hàm Thuận Bắc</Name>
+  </District>
+  <District>
+    <Id>248</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Hàm Thuận Nam</Name>
+  </District>
+  <District>
+    <Id>249</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Phú Qúi</Name>
+  </District>
+  <District>
+    <Id>250</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Tánh Linh</Name>
+  </District>
+  <District>
+    <Id>251</Id>
+    <CitiId>16</CitiId>
+    <Name>Huyện Tuy Phong</Name>
+  </District>
+  <District>
+    <Id>252</Id>
+    <CitiId>16</CitiId>
+    <Name>Thành phố Phan Thiết</Name>
+  </District>
+  <District>
+    <Id>253</Id>
+    <CitiId>16</CitiId>
+    <Name>Thị xã La Gi</Name>
+  </District>
+  <District>
+    <Id>254</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Cái Nước</Name>
+  </District>
+  <District>
+    <Id>255</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Đầm Dơi</Name>
+  </District>
+  <District>
+    <Id>256</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Năm Căn</Name>
+  </District>
+  <District>
+    <Id>257</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Ngọc Hiển</Name>
+  </District>
+  <District>
+    <Id>258</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Phú Tân</Name>
+  </District>
+  <District>
+    <Id>259</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Thới Bình</Name>
+  </District>
+  <District>
+    <Id>260</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện Trần Văn Thời</Name>
+  </District>
+  <District>
+    <Id>261</Id>
+    <CitiId>17</CitiId>
+    <Name>Huyện U Minh</Name>
+  </District>
+  <District>
+    <Id>262</Id>
+    <CitiId>17</CitiId>
+    <Name>Thành phố Cà Mau</Name>
+  </District>
+  <District>
+    <Id>263</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Bảo Lạc</Name>
+  </District>
+  <District>
+    <Id>264</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Bảo Lâm</Name>
+  </District>
+  <District>
+    <Id>265</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Hạ Lang</Name>
+  </District>
+  <District>
+    <Id>266</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Hà Quảng</Name>
+  </District>
+  <District>
+    <Id>267</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Hòa An</Name>
+  </District>
+  <District>
+    <Id>268</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Nguyên Bình</Name>
+  </District>
+  <District>
+    <Id>269</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Phục Hòa</Name>
+  </District>
+  <District>
+    <Id>270</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Quảng Uyên</Name>
+  </District>
+  <District>
+    <Id>271</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Thạch An</Name>
+  </District>
+  <District>
+    <Id>272</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Thông Nông</Name>
+  </District>
+  <District>
+    <Id>273</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Trà Lĩnh</Name>
+  </District>
+  <District>
+    <Id>274</Id>
+    <CitiId>18</CitiId>
+    <Name>Huyện Trùng Khánh</Name>
+  </District>
+  <District>
+    <Id>275</Id>
+    <CitiId>18</CitiId>
+    <Name>Thị xã Cao Bằng</Name>
+  </District>
+  <District>
+    <Id>276</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Buôn Đôn</Name>
+  </District>
+  <District>
+    <Id>277</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Cư Kuin</Name>
+  </District>
+  <District>
+    <Id>278</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Cư MGar</Name>
+  </District>
+  <District>
+    <Id>279</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Ea Kar</Name>
+  </District>
+  <District>
+    <Id>280</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Ea Súp</Name>
+  </District>
+  <District>
+    <Id>281</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện EaHLeo</Name>
+  </District>
+  <District>
+    <Id>282</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Krông Ana</Name>
+  </District>
+  <District>
+    <Id>283</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Krông Bông</Name>
+  </District>
+  <District>
+    <Id>284</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Krông Búk</Name>
+  </District>
+  <District>
+    <Id>285</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Krông Năng</Name>
+  </District>
+  <District>
+    <Id>286</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Krông Pắc</Name>
+  </District>
+  <District>
+    <Id>287</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện Lắk</Name>
+  </District>
+  <District>
+    <Id>288</Id>
+    <CitiId>19</CitiId>
+    <Name>Huyện MDrắk</Name>
+  </District>
+  <District>
+    <Id>289</Id>
+    <CitiId>19</CitiId>
+    <Name>Thành phố Buôn Ma Thuột</Name>
+  </District>
+  <District>
+    <Id>290</Id>
+    <CitiId>19</CitiId>
+    <Name>Thị xã Buôn Hồ</Name>
+  </District>
+  <District>
+    <Id>291</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Cư Jút</Name>
+  </District>
+  <District>
+    <Id>292</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Đắk GLong</Name>
+  </District>
+  <District>
+    <Id>293</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Đắk Mil</Name>
+  </District>
+  <District>
+    <Id>294</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Đắk RLấp</Name>
+  </District>
+  <District>
+    <Id>295</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Đắk Song</Name>
+  </District>
+  <District>
+    <Id>296</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện KRông Nô</Name>
+  </District>
+  <District>
+    <Id>297</Id>
+    <CitiId>20</CitiId>
+    <Name>Huyện Tuy Đức</Name>
+  </District>
+  <District>
+    <Id>298</Id>
+    <CitiId>20</CitiId>
+    <Name>Thị xã Gia Nghĩa</Name>
+  </District>
+  <District>
+    <Id>299</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Điện Biên</Name>
+  </District>
+  <District>
+    <Id>300</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Điện Biên Đông</Name>
+  </District>
+  <District>
+    <Id>301</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Mường Chà</Name>
+  </District>
+  <District>
+    <Id>302</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Mương Nhé</Name>
+  </District>
+  <District>
+    <Id>303</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Mường ảng</Name>
+  </District>
+  <District>
+    <Id>304</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Tủa Chùa</Name>
+  </District>
+  <District>
+    <Id>305</Id>
+    <CitiId>21</CitiId>
+    <Name>Huyện Tuần Giáo</Name>
+  </District>
+  <District>
+    <Id>306</Id>
+    <CitiId>21</CitiId>
+    <Name>Thành phố Điện Biên phủ</Name>
+  </District>
+  <District>
+    <Id>307</Id>
+    <CitiId>21</CitiId>
+    <Name>Thị xã Mường Lay</Name>
+  </District>
+  <District>
+    <Id>308</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Cẩm Mỹ</Name>
+  </District>
+  <District>
+    <Id>309</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Định Quán</Name>
+  </District>
+  <District>
+    <Id>310</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Long Thành</Name>
+  </District>
+  <District>
+    <Id>311</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Nhơn Trạch</Name>
+  </District>
+  <District>
+    <Id>312</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Tân Phú</Name>
+  </District>
+  <District>
+    <Id>313</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Thống Nhất</Name>
+  </District>
+  <District>
+    <Id>314</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Trảng Bom</Name>
+  </District>
+  <District>
+    <Id>315</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Vĩnh Cửu</Name>
+  </District>
+  <District>
+    <Id>316</Id>
+    <CitiId>22</CitiId>
+    <Name>Huyện Xuân Lộc</Name>
+  </District>
+  <District>
+    <Id>317</Id>
+    <CitiId>22</CitiId>
+    <Name>Thành phố Biên Hòa</Name>
+  </District>
+  <District>
+    <Id>318</Id>
+    <CitiId>22</CitiId>
+    <Name>Thị xã Long Khánh</Name>
+  </District>
+  <District>
+    <Id>319</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Cao Lãnh</Name>
+  </District>
+  <District>
+    <Id>320</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>321</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Hồng Ngự</Name>
+  </District>
+  <District>
+    <Id>322</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Lai Vung</Name>
+  </District>
+  <District>
+    <Id>323</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Lấp Vò</Name>
+  </District>
+  <District>
+    <Id>324</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Tam Nông</Name>
+  </District>
+  <District>
+    <Id>325</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Tân Hồng</Name>
+  </District>
+  <District>
+    <Id>326</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Thanh Bình</Name>
+  </District>
+  <District>
+    <Id>327</Id>
+    <CitiId>23</CitiId>
+    <Name>Huyện Tháp Mười</Name>
+  </District>
+  <District>
+    <Id>328</Id>
+    <CitiId>23</CitiId>
+    <Name>Thành phố Cao Lãnh</Name>
+  </District>
+  <District>
+    <Id>329</Id>
+    <CitiId>23</CitiId>
+    <Name>Thị xã Hồng Ngự</Name>
+  </District>
+  <District>
+    <Id>330</Id>
+    <CitiId>23</CitiId>
+    <Name>Thị xã Sa Đéc</Name>
+  </District>
+  <District>
+    <Id>331</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Chư Păh</Name>
+  </District>
+  <District>
+    <Id>332</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Chư Pưh</Name>
+  </District>
+  <District>
+    <Id>333</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Chư Sê</Name>
+  </District>
+  <District>
+    <Id>334</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện ChưPRông</Name>
+  </District>
+  <District>
+    <Id>335</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Đăk Đoa</Name>
+  </District>
+  <District>
+    <Id>336</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Đăk Pơ</Name>
+  </District>
+  <District>
+    <Id>337</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Đức Cơ</Name>
+  </District>
+  <District>
+    <Id>338</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Ia Grai</Name>
+  </District>
+  <District>
+    <Id>339</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Ia Pa</Name>
+  </District>
+  <District>
+    <Id>340</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện KBang</Name>
+  </District>
+  <District>
+    <Id>341</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện KBang</Name>
+  </District>
+  <District>
+    <Id>342</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Kông Chro</Name>
+  </District>
+  <District>
+    <Id>343</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Krông Pa</Name>
+  </District>
+  <District>
+    <Id>344</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Mang Yang</Name>
+  </District>
+  <District>
+    <Id>345</Id>
+    <CitiId>24</CitiId>
+    <Name>Huyện Phú Thiện</Name>
+  </District>
+  <District>
+    <Id>346</Id>
+    <CitiId>24</CitiId>
+    <Name>Thành phố Plei Ku</Name>
+  </District>
+  <District>
+    <Id>347</Id>
+    <CitiId>24</CitiId>
+    <Name>Thị xã AYun Pa</Name>
+  </District>
+  <District>
+    <Id>348</Id>
+    <CitiId>24</CitiId>
+    <Name>Thị xã An Khê</Name>
+  </District>
+  <District>
+    <Id>349</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Bắc Mê</Name>
+  </District>
+  <District>
+    <Id>350</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Bắc Quang</Name>
+  </District>
+  <District>
+    <Id>351</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Đồng Văn</Name>
+  </District>
+  <District>
+    <Id>352</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Hoàng Su Phì</Name>
+  </District>
+  <District>
+    <Id>353</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Mèo Vạc</Name>
+  </District>
+  <District>
+    <Id>354</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Quản Bạ</Name>
+  </District>
+  <District>
+    <Id>355</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Quang Bình</Name>
+  </District>
+  <District>
+    <Id>356</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Vị Xuyên</Name>
+  </District>
+  <District>
+    <Id>357</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Xín Mần</Name>
+  </District>
+  <District>
+    <Id>358</Id>
+    <CitiId>25</CitiId>
+    <Name>Huyện Yên Minh</Name>
+  </District>
+  <District>
+    <Id>359</Id>
+    <CitiId>25</CitiId>
+    <Name>Thành Phố Hà Giang</Name>
+  </District>
+  <District>
+    <Id>360</Id>
+    <CitiId>26</CitiId>
+    <Name>Huyện Bình Lục</Name>
+  </District>
+  <District>
+    <Id>361</Id>
+    <CitiId>26</CitiId>
+    <Name>Huyện Duy Tiên</Name>
+  </District>
+  <District>
+    <Id>362</Id>
+    <CitiId>26</CitiId>
+    <Name>Huyện Kim Bảng</Name>
+  </District>
+  <District>
+    <Id>363</Id>
+    <CitiId>26</CitiId>
+    <Name>Huyện Lý Nhân</Name>
+  </District>
+  <District>
+    <Id>364</Id>
+    <CitiId>26</CitiId>
+    <Name>Huyện Thanh Liêm</Name>
+  </District>
+  <District>
+    <Id>365</Id>
+    <CitiId>26</CitiId>
+    <Name>Thành phố Phủ Lý</Name>
+  </District>
+  <District>
+    <Id>366</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Cẩm Xuyên</Name>
+  </District>
+  <District>
+    <Id>367</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Can Lộc</Name>
+  </District>
+  <District>
+    <Id>368</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Đức Thọ</Name>
+  </District>
+  <District>
+    <Id>369</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Hương Khê</Name>
+  </District>
+  <District>
+    <Id>370</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Hương Sơn</Name>
+  </District>
+  <District>
+    <Id>371</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Kỳ Anh</Name>
+  </District>
+  <District>
+    <Id>372</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Lộc Hà</Name>
+  </District>
+  <District>
+    <Id>373</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Nghi Xuân</Name>
+  </District>
+  <District>
+    <Id>374</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Thạch Hà</Name>
+  </District>
+  <District>
+    <Id>375</Id>
+    <CitiId>27</CitiId>
+    <Name>Huyện Vũ Quang</Name>
+  </District>
+  <District>
+    <Id>376</Id>
+    <CitiId>27</CitiId>
+    <Name>Thành phố Hà Tĩnh</Name>
+  </District>
+  <District>
+    <Id>377</Id>
+    <CitiId>27</CitiId>
+    <Name>Thị xã Hồng Lĩnh</Name>
+  </District>
+  <District>
+    <Id>378</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Bình Giang</Name>
+  </District>
+  <District>
+    <Id>379</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Cẩm Giàng</Name>
+  </District>
+  <District>
+    <Id>380</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Gia Lộc</Name>
+  </District>
+  <District>
+    <Id>381</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Kim Thành</Name>
+  </District>
+  <District>
+    <Id>382</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Kinh Môn</Name>
+  </District>
+  <District>
+    <Id>383</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Nam Sách</Name>
+  </District>
+  <District>
+    <Id>384</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Ninh Giang</Name>
+  </District>
+  <District>
+    <Id>385</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Thanh Hà</Name>
+  </District>
+  <District>
+    <Id>386</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Thanh Miện</Name>
+  </District>
+  <District>
+    <Id>387</Id>
+    <CitiId>28</CitiId>
+    <Name>Huyện Tứ Kỳ</Name>
+  </District>
+  <District>
+    <Id>388</Id>
+    <CitiId>28</CitiId>
+    <Name>Thành phố Hải Dương</Name>
+  </District>
+  <District>
+    <Id>389</Id>
+    <CitiId>28</CitiId>
+    <Name>Thị xã Chí Linh</Name>
+  </District>
+  <District>
+    <Id>390</Id>
+    <CitiId>29</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>391</Id>
+    <CitiId>29</CitiId>
+    <Name>Huyện Châu Thành A</Name>
+  </District>
+  <District>
+    <Id>392</Id>
+    <CitiId>29</CitiId>
+    <Name>Huyện Long Mỹ</Name>
+  </District>
+  <District>
+    <Id>393</Id>
+    <CitiId>29</CitiId>
+    <Name>Huyện Phụng Hiệp</Name>
+  </District>
+  <District>
+    <Id>394</Id>
+    <CitiId>29</CitiId>
+    <Name>Huyện Vị Thủy</Name>
+  </District>
+  <District>
+    <Id>395</Id>
+    <CitiId>29</CitiId>
+    <Name>Thành Phố Vị Thanh</Name>
+  </District>
+  <District>
+    <Id>396</Id>
+    <CitiId>29</CitiId>
+    <Name>Thị xã Ngã Bảy</Name>
+  </District>
+  <District>
+    <Id>397</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Cao Phong</Name>
+  </District>
+  <District>
+    <Id>398</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Đà Bắc</Name>
+  </District>
+  <District>
+    <Id>399</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Kim Bôi</Name>
+  </District>
+  <District>
+    <Id>400</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Kỳ Sơn</Name>
+  </District>
+  <District>
+    <Id>401</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Lạc Sơn</Name>
+  </District>
+  <District>
+    <Id>402</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Lạc Thủy</Name>
+  </District>
+  <District>
+    <Id>403</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Lương Sơn</Name>
+  </District>
+  <District>
+    <Id>404</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Mai Châu</Name>
+  </District>
+  <District>
+    <Id>405</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Tân Lạc</Name>
+  </District>
+  <District>
+    <Id>406</Id>
+    <CitiId>30</CitiId>
+    <Name>Huyện Yên Thủy</Name>
+  </District>
+  <District>
+    <Id>407</Id>
+    <CitiId>30</CitiId>
+    <Name>Thành phố Hòa Bình</Name>
+  </District>
+  <District>
+    <Id>408</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Ân Thi</Name>
+  </District>
+  <District>
+    <Id>409</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Khoái Châu</Name>
+  </District>
+  <District>
+    <Id>410</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Kim Động</Name>
+  </District>
+  <District>
+    <Id>411</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Mỹ Hào</Name>
+  </District>
+  <District>
+    <Id>412</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Phù Cừ</Name>
+  </District>
+  <District>
+    <Id>413</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Tiên Lữ</Name>
+  </District>
+  <District>
+    <Id>414</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Văn Giang</Name>
+  </District>
+  <District>
+    <Id>415</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Văn Lâm</Name>
+  </District>
+  <District>
+    <Id>416</Id>
+    <CitiId>31</CitiId>
+    <Name>Huyện Yên Mỹ</Name>
+  </District>
+  <District>
+    <Id>417</Id>
+    <CitiId>31</CitiId>
+    <Name>Thành phố Hưng Yên</Name>
+  </District>
+  <District>
+    <Id>418</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Cam Lâm</Name>
+  </District>
+  <District>
+    <Id>419</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Diên Khánh</Name>
+  </District>
+  <District>
+    <Id>420</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Khánh Sơn</Name>
+  </District>
+  <District>
+    <Id>421</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Khánh Vĩnh</Name>
+  </District>
+  <District>
+    <Id>422</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Ninh Hòa</Name>
+  </District>
+  <District>
+    <Id>423</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Trường Sa</Name>
+  </District>
+  <District>
+    <Id>424</Id>
+    <CitiId>32</CitiId>
+    <Name>Huyện Vạn Ninh</Name>
+  </District>
+  <District>
+    <Id>425</Id>
+    <CitiId>32</CitiId>
+    <Name>Thành phố Nha Trang</Name>
+  </District>
+  <District>
+    <Id>426</Id>
+    <CitiId>32</CitiId>
+    <Name>Thị xã Cam Ranh</Name>
+  </District>
+  <District>
+    <Id>427</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện An Biên</Name>
+  </District>
+  <District>
+    <Id>428</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện An Minh</Name>
+  </District>
+  <District>
+    <Id>429</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>430</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Giang Thành</Name>
+  </District>
+  <District>
+    <Id>431</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Giồng Riềng</Name>
+  </District>
+  <District>
+    <Id>432</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Gò Quao</Name>
+  </District>
+  <District>
+    <Id>433</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Hòn Đất</Name>
+  </District>
+  <District>
+    <Id>434</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Kiên Hải</Name>
+  </District>
+  <District>
+    <Id>435</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Kiên Lương</Name>
+  </District>
+  <District>
+    <Id>436</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Phú Quốc</Name>
+  </District>
+  <District>
+    <Id>437</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Tân Hiệp</Name>
+  </District>
+  <District>
+    <Id>438</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện U Minh Thượng</Name>
+  </District>
+  <District>
+    <Id>439</Id>
+    <CitiId>33</CitiId>
+    <Name>Huyện Vĩnh Thuận</Name>
+  </District>
+  <District>
+    <Id>440</Id>
+    <CitiId>33</CitiId>
+    <Name>Thành phố Rạch Giá</Name>
+  </District>
+  <District>
+    <Id>441</Id>
+    <CitiId>33</CitiId>
+    <Name>Thị xã Hà Tiên</Name>
+  </District>
+  <District>
+    <Id>442</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Đắk Glei</Name>
+  </District>
+  <District>
+    <Id>443</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Đắk Hà</Name>
+  </District>
+  <District>
+    <Id>444</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Đắk Tô</Name>
+  </District>
+  <District>
+    <Id>445</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Kon Plông</Name>
+  </District>
+  <District>
+    <Id>446</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Kon Rẫy</Name>
+  </District>
+  <District>
+    <Id>447</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Ngọc Hồi</Name>
+  </District>
+  <District>
+    <Id>448</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Sa Thầy</Name>
+  </District>
+  <District>
+    <Id>449</Id>
+    <CitiId>34</CitiId>
+    <Name>Huyện Tu Mơ Rông</Name>
+  </District>
+  <District>
+    <Id>450</Id>
+    <CitiId>34</CitiId>
+    <Name>Thành phố Kon Tum</Name>
+  </District>
+  <District>
+    <Id>451</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Mường Tè</Name>
+  </District>
+  <District>
+    <Id>452</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Phong Thổ</Name>
+  </District>
+  <District>
+    <Id>453</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Sìn Hồ</Name>
+  </District>
+  <District>
+    <Id>454</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Tam Đường</Name>
+  </District>
+  <District>
+    <Id>455</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Tân Uyên</Name>
+  </District>
+  <District>
+    <Id>456</Id>
+    <CitiId>35</CitiId>
+    <Name>Huyện Than Uyên</Name>
+  </District>
+  <District>
+    <Id>457</Id>
+    <CitiId>35</CitiId>
+    <Name>Thị xã Lai Châu</Name>
+  </District>
+  <District>
+    <Id>458</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Bảo Lâm</Name>
+  </District>
+  <District>
+    <Id>459</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Cát Tiên</Name>
+  </District>
+  <District>
+    <Id>460</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Đạ Huoai</Name>
+  </District>
+  <District>
+    <Id>461</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Đạ Tẻh</Name>
+  </District>
+  <District>
+    <Id>462</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Đam Rông</Name>
+  </District>
+  <District>
+    <Id>463</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Di Linh</Name>
+  </District>
+  <District>
+    <Id>464</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Đơn Dương</Name>
+  </District>
+  <District>
+    <Id>465</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Đức Trọng</Name>
+  </District>
+  <District>
+    <Id>466</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Lạc Dương</Name>
+  </District>
+  <District>
+    <Id>467</Id>
+    <CitiId>36</CitiId>
+    <Name>Huyện Lâm Hà</Name>
+  </District>
+  <District>
+    <Id>468</Id>
+    <CitiId>36</CitiId>
+    <Name>Thành phố Bảo Lộc</Name>
+  </District>
+  <District>
+    <Id>469</Id>
+    <CitiId>36</CitiId>
+    <Name>Thành phố Đà Lạt</Name>
+  </District>
+  <District>
+    <Id>470</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Bắc Sơn</Name>
+  </District>
+  <District>
+    <Id>471</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Bình Gia</Name>
+  </District>
+  <District>
+    <Id>472</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Cao Lộc</Name>
+  </District>
+  <District>
+    <Id>473</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Chi Lăng</Name>
+  </District>
+  <District>
+    <Id>474</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Đình Lập</Name>
+  </District>
+  <District>
+    <Id>475</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Hữu Lũng</Name>
+  </District>
+  <District>
+    <Id>476</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Lộc Bình</Name>
+  </District>
+  <District>
+    <Id>477</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Tràng Định</Name>
+  </District>
+  <District>
+    <Id>478</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Văn Lãng</Name>
+  </District>
+  <District>
+    <Id>479</Id>
+    <CitiId>37</CitiId>
+    <Name>Huyện Văn Quan</Name>
+  </District>
+  <District>
+    <Id>480</Id>
+    <CitiId>37</CitiId>
+    <Name>Thành phố Lạng Sơn</Name>
+  </District>
+  <District>
+    <Id>481</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Bắc Hà</Name>
+  </District>
+  <District>
+    <Id>482</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Bảo Thắng</Name>
+  </District>
+  <District>
+    <Id>483</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Bảo Yên</Name>
+  </District>
+  <District>
+    <Id>484</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Bát Xát</Name>
+  </District>
+  <District>
+    <Id>485</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Mường Khương</Name>
+  </District>
+  <District>
+    <Id>486</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Sa Pa</Name>
+  </District>
+  <District>
+    <Id>487</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Si Ma Cai</Name>
+  </District>
+  <District>
+    <Id>488</Id>
+    <CitiId>38</CitiId>
+    <Name>Huyện Văn Bàn</Name>
+  </District>
+  <District>
+    <Id>489</Id>
+    <CitiId>38</CitiId>
+    <Name>Thành phố Lào Cai</Name>
+  </District>
+  <District>
+    <Id>490</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Bến Lức</Name>
+  </District>
+  <District>
+    <Id>491</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Cần Đước</Name>
+  </District>
+  <District>
+    <Id>492</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Cần Giuộc</Name>
+  </District>
+  <District>
+    <Id>493</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>494</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Đức Hòa</Name>
+  </District>
+  <District>
+    <Id>495</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Đức Huệ</Name>
+  </District>
+  <District>
+    <Id>496</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Mộc Hóa</Name>
+  </District>
+  <District>
+    <Id>497</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Tân Hưng</Name>
+  </District>
+  <District>
+    <Id>498</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Tân Thạnh</Name>
+  </District>
+  <District>
+    <Id>499</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Tân Trụ</Name>
+  </District>
+  <District>
+    <Id>500</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Thạnh Hóa</Name>
+  </District>
+  <District>
+    <Id>501</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Thủ Thừa</Name>
+  </District>
+  <District>
+    <Id>502</Id>
+    <CitiId>39</CitiId>
+    <Name>Huyện Vĩnh Hưng</Name>
+  </District>
+  <District>
+    <Id>503</Id>
+    <CitiId>39</CitiId>
+    <Name>Thành phố Tân An</Name>
+  </District>
+  <District>
+    <Id>504</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Giao Thủy</Name>
+  </District>
+  <District>
+    <Id>505</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Hải Hậu</Name>
+  </District>
+  <District>
+    <Id>506</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Mỹ Lộc</Name>
+  </District>
+  <District>
+    <Id>507</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Nam Trực</Name>
+  </District>
+  <District>
+    <Id>508</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Nghĩa Hưng</Name>
+  </District>
+  <District>
+    <Id>509</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Trực Ninh</Name>
+  </District>
+  <District>
+    <Id>510</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Vụ Bản</Name>
+  </District>
+  <District>
+    <Id>511</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện Xuân Trường</Name>
+  </District>
+  <District>
+    <Id>512</Id>
+    <CitiId>40</CitiId>
+    <Name>Huyện ý Yên</Name>
+  </District>
+  <District>
+    <Id>513</Id>
+    <CitiId>40</CitiId>
+    <Name>Thành phố Nam Định</Name>
+  </District>
+  <District>
+    <Id>514</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Anh Sơn</Name>
+  </District>
+  <District>
+    <Id>515</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Con Cuông</Name>
+  </District>
+  <District>
+    <Id>516</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Diễn Châu</Name>
+  </District>
+  <District>
+    <Id>517</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Đô Lương</Name>
+  </District>
+  <District>
+    <Id>518</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Hưng Nguyên</Name>
+  </District>
+  <District>
+    <Id>519</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Kỳ Sơn</Name>
+  </District>
+  <District>
+    <Id>520</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Nam Đàn</Name>
+  </District>
+  <District>
+    <Id>521</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Nghi Lộc</Name>
+  </District>
+  <District>
+    <Id>522</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Nghĩa Đàn</Name>
+  </District>
+  <District>
+    <Id>523</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Quế Phong</Name>
+  </District>
+  <District>
+    <Id>524</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Quỳ Châu</Name>
+  </District>
+  <District>
+    <Id>525</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Quỳ Hợp</Name>
+  </District>
+  <District>
+    <Id>526</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Quỳnh Lưu</Name>
+  </District>
+  <District>
+    <Id>527</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Tân Kỳ</Name>
+  </District>
+  <District>
+    <Id>528</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Thanh Chương</Name>
+  </District>
+  <District>
+    <Id>529</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Tương Dương</Name>
+  </District>
+  <District>
+    <Id>530</Id>
+    <CitiId>41</CitiId>
+    <Name>Huyện Yên Thành</Name>
+  </District>
+  <District>
+    <Id>531</Id>
+    <CitiId>41</CitiId>
+    <Name>Thành phố Vinh</Name>
+  </District>
+  <District>
+    <Id>532</Id>
+    <CitiId>41</CitiId>
+    <Name>Thị xã Cửa Lò</Name>
+  </District>
+  <District>
+    <Id>533</Id>
+    <CitiId>41</CitiId>
+    <Name>Thị xã Thái Hòa</Name>
+  </District>
+  <District>
+    <Id>534</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Gia Viễn</Name>
+  </District>
+  <District>
+    <Id>535</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Hoa Lư</Name>
+  </District>
+  <District>
+    <Id>536</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Kim Sơn</Name>
+  </District>
+  <District>
+    <Id>537</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Nho Quan</Name>
+  </District>
+  <District>
+    <Id>538</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Yên Khánh</Name>
+  </District>
+  <District>
+    <Id>539</Id>
+    <CitiId>42</CitiId>
+    <Name>Huyện Yên Mô</Name>
+  </District>
+  <District>
+    <Id>540</Id>
+    <CitiId>42</CitiId>
+    <Name>Thành phố Ninh Bình</Name>
+  </District>
+  <District>
+    <Id>541</Id>
+    <CitiId>42</CitiId>
+    <Name>Thị xã Tam Điệp</Name>
+  </District>
+  <District>
+    <Id>542</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyên Bác ái</Name>
+  </District>
+  <District>
+    <Id>543</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyện Ninh Hải</Name>
+  </District>
+  <District>
+    <Id>544</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyện Ninh Phước</Name>
+  </District>
+  <District>
+    <Id>545</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyện Ninh Sơn</Name>
+  </District>
+  <District>
+    <Id>546</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyện Thuận Bắc</Name>
+  </District>
+  <District>
+    <Id>547</Id>
+    <CitiId>43</CitiId>
+    <Name>Huyện Thuận Nam</Name>
+  </District>
+  <District>
+    <Id>548</Id>
+    <CitiId>43</CitiId>
+    <Name>Thành phố Phan Rang-Tháp Chàm</Name>
+  </District>
+  <District>
+    <Id>549</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Cẩm Khê</Name>
+  </District>
+  <District>
+    <Id>550</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Đoan Hùng</Name>
+  </District>
+  <District>
+    <Id>551</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Hạ Hòa</Name>
+  </District>
+  <District>
+    <Id>552</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Lâm Thao</Name>
+  </District>
+  <District>
+    <Id>553</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Phù Ninh</Name>
+  </District>
+  <District>
+    <Id>554</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Tam Nông</Name>
+  </District>
+  <District>
+    <Id>555</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Tân Sơn</Name>
+  </District>
+  <District>
+    <Id>556</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Thanh Ba</Name>
+  </District>
+  <District>
+    <Id>557</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Thanh Sơn</Name>
+  </District>
+  <District>
+    <Id>558</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Thanh Thủy</Name>
+  </District>
+  <District>
+    <Id>559</Id>
+    <CitiId>44</CitiId>
+    <Name>Huyện Yên Lập</Name>
+  </District>
+  <District>
+    <Id>560</Id>
+    <CitiId>44</CitiId>
+    <Name>Thành phố Việt Trì</Name>
+  </District>
+  <District>
+    <Id>561</Id>
+    <CitiId>44</CitiId>
+    <Name>Thị xã Phú Thọ</Name>
+  </District>
+  <District>
+    <Id>562</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Đông Hòa</Name>
+  </District>
+  <District>
+    <Id>563</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Đồng Xuân</Name>
+  </District>
+  <District>
+    <Id>564</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Phú Hòa</Name>
+  </District>
+  <District>
+    <Id>565</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Sơn Hòa</Name>
+  </District>
+  <District>
+    <Id>566</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Sông Hinh</Name>
+  </District>
+  <District>
+    <Id>567</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Tây Hòa</Name>
+  </District>
+  <District>
+    <Id>568</Id>
+    <CitiId>45</CitiId>
+    <Name>Huyện Tuy An</Name>
+  </District>
+  <District>
+    <Id>569</Id>
+    <CitiId>45</CitiId>
+    <Name>Thành phố Tuy Hòa</Name>
+  </District>
+  <District>
+    <Id>570</Id>
+    <CitiId>45</CitiId>
+    <Name>Thị xã Sông Cầu</Name>
+  </District>
+  <District>
+    <Id>571</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện Bố Trạch</Name>
+  </District>
+  <District>
+    <Id>572</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện Lệ Thủy</Name>
+  </District>
+  <District>
+    <Id>573</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện MinhHoá</Name>
+  </District>
+  <District>
+    <Id>574</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện Quảng Ninh</Name>
+  </District>
+  <District>
+    <Id>575</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện Quảng Trạch</Name>
+  </District>
+  <District>
+    <Id>576</Id>
+    <CitiId>46</CitiId>
+    <Name>Huyện Tuyên Hoá</Name>
+  </District>
+  <District>
+    <Id>577</Id>
+    <CitiId>46</CitiId>
+    <Name>Thành phố Đồng Hới</Name>
+  </District>
+  <District>
+    <Id>578</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Bắc Trà My</Name>
+  </District>
+  <District>
+    <Id>579</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Đại Lộc</Name>
+  </District>
+  <District>
+    <Id>580</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Điện Bàn</Name>
+  </District>
+  <District>
+    <Id>581</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Đông Giang</Name>
+  </District>
+  <District>
+    <Id>582</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Duy Xuyên</Name>
+  </District>
+  <District>
+    <Id>583</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Hiệp Đức</Name>
+  </District>
+  <District>
+    <Id>584</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Nam Giang</Name>
+  </District>
+  <District>
+    <Id>585</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Nam Trà My</Name>
+  </District>
+  <District>
+    <Id>586</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Nông Sơn</Name>
+  </District>
+  <District>
+    <Id>587</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Núi Thành</Name>
+  </District>
+  <District>
+    <Id>588</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Phú Ninh</Name>
+  </District>
+  <District>
+    <Id>589</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Phước Sơn</Name>
+  </District>
+  <District>
+    <Id>590</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Quế Sơn</Name>
+  </District>
+  <District>
+    <Id>591</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Tây Giang</Name>
+  </District>
+  <District>
+    <Id>592</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Thăng Bình</Name>
+  </District>
+  <District>
+    <Id>593</Id>
+    <CitiId>47</CitiId>
+    <Name>Huyện Tiên Phước</Name>
+  </District>
+  <District>
+    <Id>594</Id>
+    <CitiId>47</CitiId>
+    <Name>Thành phố Hội An</Name>
+  </District>
+  <District>
+    <Id>595</Id>
+    <CitiId>47</CitiId>
+    <Name>Thành phố Tam Kỳ</Name>
+  </District>
+  <District>
+    <Id>596</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Ba Tơ</Name>
+  </District>
+  <District>
+    <Id>597</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Bình Sơn</Name>
+  </District>
+  <District>
+    <Id>598</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Đức Phổ</Name>
+  </District>
+  <District>
+    <Id>599</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Lý sơn</Name>
+  </District>
+  <District>
+    <Id>600</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Minh Long</Name>
+  </District>
+  <District>
+    <Id>601</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Mộ Đức</Name>
+  </District>
+  <District>
+    <Id>602</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Nghĩa Hành</Name>
+  </District>
+  <District>
+    <Id>603</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Sơn Hà</Name>
+  </District>
+  <District>
+    <Id>604</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Sơn Tây</Name>
+  </District>
+  <District>
+    <Id>605</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Sơn Tịnh</Name>
+  </District>
+  <District>
+    <Id>606</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Tây Trà</Name>
+  </District>
+  <District>
+    <Id>607</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Trà Bồng</Name>
+  </District>
+  <District>
+    <Id>608</Id>
+    <CitiId>48</CitiId>
+    <Name>Huyện Tư Nghĩa</Name>
+  </District>
+  <District>
+    <Id>609</Id>
+    <CitiId>48</CitiId>
+    <Name>Thành phố Quảng Ngãi</Name>
+  </District>
+  <District>
+    <Id>610</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Ba Chẽ</Name>
+  </District>
+  <District>
+    <Id>611</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Bình Liêu</Name>
+  </District>
+  <District>
+    <Id>612</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Cô Tô</Name>
+  </District>
+  <District>
+    <Id>613</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Đầm Hà</Name>
+  </District>
+  <District>
+    <Id>614</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Đông Triều</Name>
+  </District>
+  <District>
+    <Id>615</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Hải Hà</Name>
+  </District>
+  <District>
+    <Id>616</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Hoành Bồ</Name>
+  </District>
+  <District>
+    <Id>617</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Tiên Yên</Name>
+  </District>
+  <District>
+    <Id>618</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Vân Đồn</Name>
+  </District>
+  <District>
+    <Id>619</Id>
+    <CitiId>49</CitiId>
+    <Name>Huyện Yên Hưng</Name>
+  </District>
+  <District>
+    <Id>620</Id>
+    <CitiId>49</CitiId>
+    <Name>Thành phố Hạ Long</Name>
+  </District>
+  <District>
+    <Id>621</Id>
+    <CitiId>49</CitiId>
+    <Name>Thành phố Móng Cái</Name>
+  </District>
+  <District>
+    <Id>622</Id>
+    <CitiId>49</CitiId>
+    <Name>Thị xã Cẩm Phả</Name>
+  </District>
+  <District>
+    <Id>623</Id>
+    <CitiId>49</CitiId>
+    <Name>Thị xã Uông Bí</Name>
+  </District>
+  <District>
+    <Id>624</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Cam Lộ</Name>
+  </District>
+  <District>
+    <Id>625</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Cồn Cỏ</Name>
+  </District>
+  <District>
+    <Id>626</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Đa Krông</Name>
+  </District>
+  <District>
+    <Id>627</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Gio Linh</Name>
+  </District>
+  <District>
+    <Id>628</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Hải Lăng</Name>
+  </District>
+  <District>
+    <Id>629</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Hướng Hóa</Name>
+  </District>
+  <District>
+    <Id>630</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Triệu Phong</Name>
+  </District>
+  <District>
+    <Id>631</Id>
+    <CitiId>50</CitiId>
+    <Name>Huyện Vính Linh</Name>
+  </District>
+  <District>
+    <Id>632</Id>
+    <CitiId>50</CitiId>
+    <Name>Thành phố Đông Hà</Name>
+  </District>
+  <District>
+    <Id>633</Id>
+    <CitiId>50</CitiId>
+    <Name>Thị xã Quảng Trị</Name>
+  </District>
+  <District>
+    <Id>634</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>635</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Cù Lao Dung</Name>
+  </District>
+  <District>
+    <Id>636</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Kế Sách</Name>
+  </District>
+  <District>
+    <Id>637</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Long Phú</Name>
+  </District>
+  <District>
+    <Id>638</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Mỹ Tú</Name>
+  </District>
+  <District>
+    <Id>639</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Mỹ Xuyên</Name>
+  </District>
+  <District>
+    <Id>640</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Ngã Năm</Name>
+  </District>
+  <District>
+    <Id>641</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Thạnh Trị</Name>
+  </District>
+  <District>
+    <Id>642</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Trần Đề</Name>
+  </District>
+  <District>
+    <Id>643</Id>
+    <CitiId>51</CitiId>
+    <Name>Huyện Vĩnh Châu</Name>
+  </District>
+  <District>
+    <Id>644</Id>
+    <CitiId>51</CitiId>
+    <Name>Thành phố Sóc Trăng</Name>
+  </District>
+  <District>
+    <Id>645</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Bắc Yên</Name>
+  </District>
+  <District>
+    <Id>646</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Mai Sơn</Name>
+  </District>
+  <District>
+    <Id>647</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Mộc Châu</Name>
+  </District>
+  <District>
+    <Id>648</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Mường La</Name>
+  </District>
+  <District>
+    <Id>649</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Phù Yên</Name>
+  </District>
+  <District>
+    <Id>650</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Quỳnh Nhai</Name>
+  </District>
+  <District>
+    <Id>651</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Sông Mã</Name>
+  </District>
+  <District>
+    <Id>652</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Sốp Cộp</Name>
+  </District>
+  <District>
+    <Id>653</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Thuận Châu</Name>
+  </District>
+  <District>
+    <Id>654</Id>
+    <CitiId>52</CitiId>
+    <Name>Huyện Yên Châu</Name>
+  </District>
+  <District>
+    <Id>655</Id>
+    <CitiId>52</CitiId>
+    <Name>Thành phố Sơn La</Name>
+  </District>
+  <District>
+    <Id>656</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Bến Cầu</Name>
+  </District>
+  <District>
+    <Id>657</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>658</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Dương Minh Châu</Name>
+  </District>
+  <District>
+    <Id>659</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Gò Dầu</Name>
+  </District>
+  <District>
+    <Id>660</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Hòa Thành</Name>
+  </District>
+  <District>
+    <Id>661</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Tân Biên</Name>
+  </District>
+  <District>
+    <Id>662</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Tân Châu</Name>
+  </District>
+  <District>
+    <Id>663</Id>
+    <CitiId>53</CitiId>
+    <Name>Huyện Trảng Bàng</Name>
+  </District>
+  <District>
+    <Id>664</Id>
+    <CitiId>53</CitiId>
+    <Name>Thị xã Tây Ninh</Name>
+  </District>
+  <District>
+    <Id>665</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Đông Hưng</Name>
+  </District>
+  <District>
+    <Id>666</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Hưng Hà</Name>
+  </District>
+  <District>
+    <Id>667</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Kiến Xương</Name>
+  </District>
+  <District>
+    <Id>668</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Quỳnh Phụ</Name>
+  </District>
+  <District>
+    <Id>669</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Thái Thụy</Name>
+  </District>
+  <District>
+    <Id>670</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Tiền Hải</Name>
+  </District>
+  <District>
+    <Id>671</Id>
+    <CitiId>54</CitiId>
+    <Name>Huyện Vũ Thư</Name>
+  </District>
+  <District>
+    <Id>672</Id>
+    <CitiId>54</CitiId>
+    <Name>Thành phố Thái Bình</Name>
+  </District>
+  <District>
+    <Id>673</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Đại Từ</Name>
+  </District>
+  <District>
+    <Id>674</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Định Hóa</Name>
+  </District>
+  <District>
+    <Id>675</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Đồng Hỷ</Name>
+  </District>
+  <District>
+    <Id>676</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Phổ Yên</Name>
+  </District>
+  <District>
+    <Id>677</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Phú Bình</Name>
+  </District>
+  <District>
+    <Id>678</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Phú Lương</Name>
+  </District>
+  <District>
+    <Id>679</Id>
+    <CitiId>55</CitiId>
+    <Name>Huyện Võ Nhai</Name>
+  </District>
+  <District>
+    <Id>680</Id>
+    <CitiId>55</CitiId>
+    <Name>Thành phố Thái Nguyên</Name>
+  </District>
+  <District>
+    <Id>681</Id>
+    <CitiId>55</CitiId>
+    <Name>Thị xã Sông Công</Name>
+  </District>
+  <District>
+    <Id>682</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Bá Thước</Name>
+  </District>
+  <District>
+    <Id>683</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Cẩm Thủy</Name>
+  </District>
+  <District>
+    <Id>684</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Đông Sơn</Name>
+  </District>
+  <District>
+    <Id>685</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Hà Trung</Name>
+  </District>
+  <District>
+    <Id>686</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Hậu Lộc</Name>
+  </District>
+  <District>
+    <Id>687</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Hoằng Hóa</Name>
+  </District>
+  <District>
+    <Id>688</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Lang Chánh</Name>
+  </District>
+  <District>
+    <Id>689</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Mường Lát</Name>
+  </District>
+  <District>
+    <Id>690</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Nga Sơn</Name>
+  </District>
+  <District>
+    <Id>691</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Ngọc Lặc</Name>
+  </District>
+  <District>
+    <Id>692</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Như Thanh</Name>
+  </District>
+  <District>
+    <Id>693</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Như Xuân</Name>
+  </District>
+  <District>
+    <Id>694</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Nông Cống</Name>
+  </District>
+  <District>
+    <Id>695</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Quan Hóa</Name>
+  </District>
+  <District>
+    <Id>696</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Quan Sơn</Name>
+  </District>
+  <District>
+    <Id>697</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Quảng Xương</Name>
+  </District>
+  <District>
+    <Id>698</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Thạch Thành</Name>
+  </District>
+  <District>
+    <Id>699</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Thiệu Hóa</Name>
+  </District>
+  <District>
+    <Id>700</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Thọ Xuân</Name>
+  </District>
+  <District>
+    <Id>701</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Thường Xuân</Name>
+  </District>
+  <District>
+    <Id>702</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Tĩnh Gia</Name>
+  </District>
+  <District>
+    <Id>703</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Triệu Sơn</Name>
+  </District>
+  <District>
+    <Id>704</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Vĩnh Lộc</Name>
+  </District>
+  <District>
+    <Id>705</Id>
+    <CitiId>56</CitiId>
+    <Name>Huyện Yên Định</Name>
+  </District>
+  <District>
+    <Id>706</Id>
+    <CitiId>56</CitiId>
+    <Name>Thành phố Thanh Hóa</Name>
+  </District>
+  <District>
+    <Id>707</Id>
+    <CitiId>56</CitiId>
+    <Name>Thị xã Bỉm Sơn</Name>
+  </District>
+  <District>
+    <Id>708</Id>
+    <CitiId>56</CitiId>
+    <Name>Thị xã Sầm Sơn</Name>
+  </District>
+  <District>
+    <Id>709</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện A Lưới</Name>
+  </District>
+  <District>
+    <Id>710</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Hương Trà</Name>
+  </District>
+  <District>
+    <Id>711</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Nam Dông</Name>
+  </District>
+  <District>
+    <Id>712</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Phong Điền</Name>
+  </District>
+  <District>
+    <Id>713</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Phú Lộc</Name>
+  </District>
+  <District>
+    <Id>714</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Phú Vang</Name>
+  </District>
+  <District>
+    <Id>715</Id>
+    <CitiId>57</CitiId>
+    <Name>Huyện Quảng Điền</Name>
+  </District>
+  <District>
+    <Id>716</Id>
+    <CitiId>57</CitiId>
+    <Name>Thành phố Huế</Name>
+  </District>
+  <District>
+    <Id>717</Id>
+    <CitiId>57</CitiId>
+    <Name>thị xã Hương Thủy</Name>
+  </District>
+  <District>
+    <Id>718</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Cái Bè</Name>
+  </District>
+  <District>
+    <Id>719</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Cai Lậy</Name>
+  </District>
+  <District>
+    <Id>720</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>721</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Chợ Gạo</Name>
+  </District>
+  <District>
+    <Id>722</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Gò Công Đông</Name>
+  </District>
+  <District>
+    <Id>723</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Gò Công Tây</Name>
+  </District>
+  <District>
+    <Id>724</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Tân Phú Đông</Name>
+  </District>
+  <District>
+    <Id>725</Id>
+    <CitiId>58</CitiId>
+    <Name>Huyện Tân Phước</Name>
+  </District>
+  <District>
+    <Id>726</Id>
+    <CitiId>58</CitiId>
+    <Name>Thành phố Mỹ Tho</Name>
+  </District>
+  <District>
+    <Id>727</Id>
+    <CitiId>58</CitiId>
+    <Name>Thị xã Gò Công</Name>
+  </District>
+  <District>
+    <Id>728</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Càng Long</Name>
+  </District>
+  <District>
+    <Id>729</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Cầu Kè</Name>
+  </District>
+  <District>
+    <Id>730</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Cầu Ngang</Name>
+  </District>
+  <District>
+    <Id>731</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Châu Thành</Name>
+  </District>
+  <District>
+    <Id>732</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Duyên Hải</Name>
+  </District>
+  <District>
+    <Id>733</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Tiểu Cần</Name>
+  </District>
+  <District>
+    <Id>734</Id>
+    <CitiId>59</CitiId>
+    <Name>Huyện Trà Cú</Name>
+  </District>
+  <District>
+    <Id>735</Id>
+    <CitiId>59</CitiId>
+    <Name>Thành phố Trà Vinh</Name>
+  </District>
+  <District>
+    <Id>736</Id>
+    <CitiId>60</CitiId>
+    <Name>Huyện Chiêm Hóa</Name>
+  </District>
+  <District>
+    <Id>737</Id>
+    <CitiId>60</CitiId>
+    <Name>Huyện Hàm Yên</Name>
+  </District>
+  <District>
+    <Id>738</Id>
+    <CitiId>60</CitiId>
+    <Name>Huyện Na hang</Name>
+  </District>
+  <District>
+    <Id>739</Id>
+    <CitiId>60</CitiId>
+    <Name>Huyện Sơn Dương</Name>
+  </District>
+  <District>
+    <Id>740</Id>
+    <CitiId>60</CitiId>
+    <Name>Huyện Yên Sơn</Name>
+  </District>
+  <District>
+    <Id>741</Id>
+    <CitiId>60</CitiId>
+    <Name>Thành phố Tuyên Quang</Name>
+  </District>
+  <District>
+    <Id>742</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Bình Minh</Name>
+  </District>
+  <District>
+    <Id>743</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Bình Tân</Name>
+  </District>
+  <District>
+    <Id>744</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Long Hồ</Name>
+  </District>
+  <District>
+    <Id>745</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Mang Thít</Name>
+  </District>
+  <District>
+    <Id>746</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Tam Bình</Name>
+  </District>
+  <District>
+    <Id>747</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Trà Ôn</Name>
+  </District>
+  <District>
+    <Id>748</Id>
+    <CitiId>61</CitiId>
+    <Name>Huyện Vũng Liêm</Name>
+  </District>
+  <District>
+    <Id>749</Id>
+    <CitiId>61</CitiId>
+    <Name>Thành phố Vĩnh Long</Name>
+  </District>
+  <District>
+    <Id>750</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Bình Xuyên</Name>
+  </District>
+  <District>
+    <Id>751</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Lập Thạch</Name>
+  </District>
+  <District>
+    <Id>752</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Sông Lô</Name>
+  </District>
+  <District>
+    <Id>753</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Tam Đảo</Name>
+  </District>
+  <District>
+    <Id>754</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Tam Dương</Name>
+  </District>
+  <District>
+    <Id>755</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Vĩnh Tường</Name>
+  </District>
+  <District>
+    <Id>756</Id>
+    <CitiId>62</CitiId>
+    <Name>Huyện Yên Lạc</Name>
+  </District>
+  <District>
+    <Id>757</Id>
+    <CitiId>62</CitiId>
+    <Name>Thành phố Vĩnh Yên</Name>
+  </District>
+  <District>
+    <Id>758</Id>
+    <CitiId>62</CitiId>
+    <Name>Thị xã Phúc Yên</Name>
+  </District>
+  <District>
+    <Id>759</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Lục Yên</Name>
+  </District>
+  <District>
+    <Id>760</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Mù Cang Chải</Name>
+  </District>
+  <District>
+    <Id>761</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Trạm Tấu</Name>
+  </District>
+  <District>
+    <Id>762</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Trấn Yên</Name>
+  </District>
+  <District>
+    <Id>763</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Văn Chấn</Name>
+  </District>
+  <District>
+    <Id>764</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Văn Yên</Name>
+  </District>
+  <District>
+    <Id>765</Id>
+    <CitiId>63</CitiId>
+    <Name>Huyện Yên Bình</Name>
+  </District>
+  <District>
+    <Id>766</Id>
+    <CitiId>63</CitiId>
+    <Name>Thành phố Yên Bái</Name>
+  </District>
+  <District>
+    <Id>767</Id>
+    <CitiId>63</CitiId>
+    <Name>Thị xã Nghĩa Lộ</Name>
+  </District>
+</ArrayOfDistrict>

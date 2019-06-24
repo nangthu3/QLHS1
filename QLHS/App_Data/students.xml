@@ -1,13 +1,6 @@
 <?xml version="1.0"?>
 <ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
-    <Id>1</Id>
-    <Name>Nguyen Van A</Name>
-    <Gender>1</Gender>
-    <Birthday>2019-06-20T23:22:53.1845102+07:00</Birthday>
-    <Address>Ha Noi</Address>
-  </Student>
-  <Student>
     <Id>2</Id>
     <Name>Nguyen Van B</Name>
     <Gender>1</Gender>
@@ -69,5 +62,12 @@
     <Gender>0</Gender>
     <Birthday>2019-06-20T23:22:53.1857078+07:00</Birthday>
     <Address>Quang Ninh</Address>
+  </Student>
+  <Student>
+    <Id>1</Id>
+    <Name>Nguyễn Văn Anh</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-20T23:22:53.1845102+07:00</Birthday>
+    <Address>Hà Nội</Address>
   </Student>
 </ArrayOfStudent>

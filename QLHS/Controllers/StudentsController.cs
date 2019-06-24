@@ -17,7 +17,7 @@ namespace QLHS.Controllers
     {
         private XmlSerializer xmlSerializer;
         private List<Student> students;
-        public StudentsController(StudentContext context)
+        public StudentsController()
         {
             xmlSerializer = new XmlSerializer(typeof(List<Student>));
             if (students == null || students.Count == 0)
@@ -30,15 +30,17 @@ namespace QLHS.Controllers
         {
             FileStream stream = System.IO.File.OpenRead("App_Data/students.xml");
             students = (List<Student>)xmlSerializer.Deserialize(stream);
+            stream.Close();
             return students;
         }
 
         private void SaveStudents()
         {
-            if (students == null || students.Count == 0)
+            if (students != null && students.Count > 0)
             {
-                FileStream stream = System.IO.File.OpenWrite("App_Data/students.xml");
+                FileStream stream = new FileStream("App_Data/students.xml", FileMode.Create);
                 xmlSerializer.Serialize(stream, students);
+                stream.Close();
             }
         }
 
@@ -49,7 +51,7 @@ namespace QLHS.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudentById(int id)
+        public async Task<ActionResult<Student>> GetStudentById(long id)
         {
             students = getAllStudents();
             var student = students.Find(st => st.Id == id);
@@ -79,10 +81,10 @@ namespace QLHS.Controllers
             }
             students = getAllStudents();
             //students.Where(s => s.Id == id).;
-            Student st = students.Find(s => s.Id == id);
-            if (st != null)
+            int index = students.FindIndex(s => s.Id == id);
+            if (index >= 0)
             {
-                st = student;
+                students[index] = student;
                 SaveStudents();
             }
 
