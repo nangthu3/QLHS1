@@ -11,6 +11,6 @@ namespace QLHS.Models
         public string Name { get; set; }
         public int Gender { get; set; }
         public DateTime Birthday { get; set; }
-        public string Address { get; set; }
+        public long AddressId { get; set; }
     }
 }

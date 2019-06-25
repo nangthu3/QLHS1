@@ -12,23 +12,58 @@ namespace QLHS.Business
     {
         private XmlSerializer xmlSerializer;
         private List<Student> students;
+        private List<StudentInfo> studentInfos;
+        private AddressBusiness addressBusiness;
 
         public StudentBusiness()
         {
+            addressBusiness = AddressBusiness.GetInstance();
             xmlSerializer = new XmlSerializer(typeof(List<Student>));
-            if (students == null || students.Count == 0)
+            if (studentInfos == null || studentInfos.Count == 0)
             {
-                students = GetAllStudents();
+                studentInfos = GetAllStudentInfos();
             }
+            //students = new List<NewStudent>();
+            //students.Add(new NewStudent { Id = 1, Name = "Nguyen Van A", Birthday = DateTime.Now, Gender = 1, AddressId = 78 });
+            //SaveStudents();
+        }
+
+        public List<StudentInfo> GetAllStudentInfos()
+        {
+            GetAllStudents();
+            List<StudentInfo> studentInfo = new List<StudentInfo>();
+            foreach (var student in students)
+            {
+                AddressItem addressItem = addressBusiness.GetAddressItem(student.AddressId);
+                studentInfo.Add(new StudentInfo { Student = student, Address = addressItem });
+            }
+            return studentInfo;
         }
 
         public List<Student> GetAllStudents()
         {
-            FileStream stream = System.IO.File.OpenRead("App_Data/students.xml");
-            students = (List<Student>)xmlSerializer.Deserialize(stream);
-            stream.Close();
+            try
+            {
+                FileStream stream = System.IO.File.OpenRead("App_Data/students.xml");
+                students = (List<Student>)xmlSerializer.Deserialize(stream);
+                stream.Close();
+            }
+            catch (Exception)
+            {
+                students = new List<Student>();
+                SaveStudents();
+            }
+
             return students;
         }
+
+        //public List<NewStudent> GetAllStudents()
+        //{
+        //    FileStream stream = System.IO.File.OpenRead("App_Data/new_students.xml");
+        //    students = (List<NewStudent>)xmlSerializer.Deserialize(stream);
+        //    stream.Close();
+        //    return students;
+        //}
 
         public Student GetStudentById(long id)
         {

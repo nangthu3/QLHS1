@@ -27,7 +27,7 @@ namespace QLHS.Controllers
             //citySerializer = new XmlSerializer(typeof(List<City>));
             //districtSerializer = new XmlSerializer(typeof(List<District>));
             //GetCitiesAndDistricts();
-            addressBusiness = new AddressBusiness();
+            addressBusiness = AddressBusiness.GetInstance();
         }
 
         //private void GetCitiesAndDistricts()

@@ -7,7 +7,7 @@ namespace QLHS.Models
 {
     public class StudentInfo
     {
-        public NewStudent Student { get; set; }
+        public Student Student { get; set; }
         public AddressItem Address { get; set; }
     }
 }

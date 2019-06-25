@@ -13,12 +13,26 @@ namespace QLHS.Business
         private List<City> cities;
         private List<District> districts;
         private XmlSerializer citySerializer, districtSerializer;
+        public static AddressBusiness instance;
+        private static readonly object padlock = new object();
 
-        public AddressBusiness()
+        private AddressBusiness()
         {
             citySerializer = new XmlSerializer(typeof(List<City>));
             districtSerializer = new XmlSerializer(typeof(List<District>));
             GetCitiesAndDistricts();
+        }
+
+        public static AddressBusiness GetInstance()
+        {
+            if (instance == null)
+            {
+                lock (padlock)
+                {
+                    instance = new AddressBusiness();
+                }
+            }
+            return instance;
         }
 
         public void GetCitiesAndDistricts()
@@ -171,12 +185,13 @@ namespace QLHS.Business
 
         public AddressItem GetAddressItem(long id)
         {
-            AddressItem item = new AddressItem ();
+            AddressItem item = new AddressItem();
             item.DistrictId = id;
             var district = GetDistrictById(id);
-            if (district!= null)
+            if (district != null)
             {
                 item.DistrictName = district.Name;
+                item.CityId = district.CitiId;
                 item.Cityname = GetCityById(district.CitiId).Name;
             }
             return item;

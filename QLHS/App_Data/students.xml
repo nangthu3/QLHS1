@@ -1,24 +1,38 @@
 <?xml version="1.0"?>
 <ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
-    <Id>10</Id>
-    <Name>Tran Thi K</Name>
-    <Gender>0</Gender>
-    <Birthday>2019-06-20T23:22:53.1857078+07:00</Birthday>
-    <Address>Quang Ninh</Address>
-  </Student>
-  <Student>
-    <Id>11</Id>
-    <Name>Huy</Name>
+    <Id>1</Id>
+    <Name>Nguyen Van B</Name>
     <Gender>1</Gender>
-    <Birthday>1994-08-14T00:00:00</Birthday>
-    <Address>104</Address>
+    <Birthday>2019-06-25T00:00:00</Birthday>
+    <AddressId>91</AddressId>
   </Student>
   <Student>
-    <Id>12</Id>
-    <Name>Lan</Name>
+    <Id>2</Id>
+    <Name>Do Quang Huy</Name>
+    <Gender>1</Gender>
+    <Birthday>1994-08-13T00:00:00</Birthday>
+    <AddressId>104</AddressId>
+  </Student>
+  <Student>
+    <Id>3</Id>
+    <Name>Tran Thi A</Name>
     <Gender>0</Gender>
-    <Birthday>2011-05-01T00:00:00</Birthday>
-    <Address>159</Address>
+    <Birthday>2019-06-25T00:00:00</Birthday>
+    <AddressId>68</AddressId>
+  </Student>
+  <Student>
+    <Id>4</Id>
+    <Name>Nguyen Van A</Name>
+    <Gender>1</Gender>
+    <Birthday>2019-06-13T00:00:00</Birthday>
+    <AddressId>177</AddressId>
+  </Student>
+  <Student>
+    <Id>5</Id>
+    <Name>Tran Thi Duong</Name>
+    <Gender>0</Gender>
+    <Birthday>1998-06-25T00:00:00</Birthday>
+    <AddressId>273</AddressId>
   </Student>
 </ArrayOfStudent>

@@ -8,6 +8,7 @@ namespace QLHS.Models
     public class AddressItem
     {
         public long DistrictId { get; set; }
+        public long CityId { get; set; }
         public string DistrictName { get; set; }
         public string Cityname { get; set; }
     }
