@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using QLHS.Models;
-
+using QLHS.Business;
 namespace QLHS.Controllers
 {
     [EnableCors("CorsPolicy")]
@@ -17,53 +17,61 @@ namespace QLHS.Controllers
     [ApiController]
     public class AddressController : ControllerBase
     {
-        private List<City> cities;
-        private List<District> districts;
-        private XmlSerializer citySerializer, districtSerializer;
+        //private List<City> cities;
+        //private List<District> districts;
+        //private XmlSerializer citySerializer, districtSerializer;
+        private AddressBusiness addressBusiness;
 
         public AddressController()
         {
-            citySerializer = new XmlSerializer(typeof(List<City>));
-            districtSerializer = new XmlSerializer(typeof(List<District>));
-            GetCitiesAndDistricts();
+            //citySerializer = new XmlSerializer(typeof(List<City>));
+            //districtSerializer = new XmlSerializer(typeof(List<District>));
+            //GetCitiesAndDistricts();
+            addressBusiness = new AddressBusiness();
         }
 
-        private void GetCitiesAndDistricts()
-        {
-            FileStream stream = new FileStream("App_Data/cities.xml", FileMode.Open);
-            cities = (List<City>)citySerializer.Deserialize(stream);
-            stream.Close();
+        //private void GetCitiesAndDistricts()
+        //{
+        //    FileStream stream = new FileStream("App_Data/cities.xml", FileMode.Open);
+        //    cities = (List<City>)citySerializer.Deserialize(stream);
+        //    stream.Close();
 
-            stream = new FileStream("App_Data/districts.xml", FileMode.Open);
-            districts = (List<District>)districtSerializer.Deserialize(stream);
-            stream.Close();
-        }
+        //    stream = new FileStream("App_Data/districts.xml", FileMode.Open);
+        //    districts = (List<District>)districtSerializer.Deserialize(stream);
+        //    stream.Close();
+        //}
 
         [HttpGet("{id}")]
         public async Task<ActionResult<String>> GetAddress(long id)
         {
-            var district = districts.FirstOrDefault(d => d.Id == id);
-            if (district != null)
-            {
-                var city = cities.FirstOrDefault(c => c.Id == district.CitiId);
-                if (city != null)
-                {
-                    return district.Name + ", " + city.Name;
-                }
-            }
-            return NotFound();
+            //var district = districts.FirstOrDefault(d => d.Id == id);
+            //if (district != null)
+            //{
+            //    var city = cities.FirstOrDefault(c => c.Id == district.CitiId);
+            //    if (city != null)
+            //    {
+            //        return district.Name + ", " + city.Name;
+            //    }
+            //}
+            //return NotFound();
+
+           return addressBusiness.GetAddressName(id);
         }
 
         [HttpGet("city")]
         public async Task<ActionResult<IEnumerable< City>>> GetCities(long id)
         {
-            return cities;
+            //return cities;
+            return addressBusiness.GetAllCities();
         }
 
         [HttpGet("city/{id}")]
         public async Task<ActionResult<City>> GetCity(long id)
         {
-            var city = cities.FirstOrDefault(c => c.Id == id);
+            //var city = cities.FirstOrDefault(c => c.Id == id);
+            //if (city != null) return city;
+            //return NotFound();
+            var city = addressBusiness.GetCityById(id);
             if (city != null) return city;
             return NotFound();
         }
@@ -71,13 +79,17 @@ namespace QLHS.Controllers
         [HttpGet("districtbycity/{id}")]
         public async Task<ActionResult<IEnumerable<District>>> GetDistrictByCityId(long id)
         {
-            return districts.FindAll(d=> d.CitiId == id);
+            //return districts.FindAll(d=> d.CitiId == id);
+            return addressBusiness.GetAllDistrictOfCity(id);
         }
 
         [HttpGet("district/{id}")]
         public async Task<ActionResult<District>> GetDistrict(long id)
         {
-            var district = districts.FirstOrDefault(d => d.Id == id);
+            //var district = districts.FirstOrDefault(d => d.Id == id);
+            //if (district != null) return district;
+            //return NotFound();
+            var district = addressBusiness.GetDistrictById(id);
             if (district != null) return district;
             return NotFound();
         }

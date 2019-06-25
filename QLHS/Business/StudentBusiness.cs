@@ -38,12 +38,10 @@ namespace QLHS.Business
 
         private void SaveStudents()
         {
-            if (students != null && students.Count > 0)
-            {
-                FileStream stream = new FileStream("App_Data/students.xml", FileMode.Create);
-                xmlSerializer.Serialize(stream, students);
-                stream.Close();
-            }
+            if (students == null) students = new List<Student>();
+            FileStream stream = new FileStream("App_Data/students.xml", FileMode.Create);
+            xmlSerializer.Serialize(stream, students);
+            stream.Close();
         }
 
         public void InsertStudent(Student student)
@@ -78,7 +76,7 @@ namespace QLHS.Business
 
         public void UpdateStudent(Student student)
         {
-            students = GetAllStudents();
+            GetAllStudents();
             int index = students.FindIndex(s => s.Id == student.Id);
             if (index >= 0)
             {
@@ -91,6 +89,17 @@ namespace QLHS.Business
         {
             GetAllStudents();
             if (students.Contains(student))
+            {
+                students.Remove(student);
+                SaveStudents();
+            }
+        }
+
+        public void DeleteStudent(long id)
+        {
+            GetAllStudents();
+            var student = students.FirstOrDefault(s => s.Id == id);
+            if (student != null)
             {
                 students.Remove(student);
                 SaveStudents();

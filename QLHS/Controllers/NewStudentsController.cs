@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Xml.Serialization;
 using System.IO;
 using Microsoft.AspNetCore.Cors;
+using QLHS.Business;
 
 namespace QLHS.Controllers
 {
@@ -19,20 +20,44 @@ namespace QLHS.Controllers
     {
         private XmlSerializer xmlSerializer;
         private List<NewStudent> students;
+        private List<StudentInfo> studentInfos;
+        private AddressBusiness addressBusiness;
+
         public NewStudentsController()
         {
+            addressBusiness = new AddressBusiness();
             xmlSerializer = new XmlSerializer(typeof(List<Student>));
-            if (students == null || students.Count == 0)
+            if (studentInfos == null || studentInfos.Count == 0)
             {
-                students = getAllStudents();
+                studentInfos = GetAllStudentInfos();
             }
         }
 
-        public List<NewStudent> getAllStudents()
+        public List<StudentInfo> GetAllStudentInfos()
         {
-            FileStream stream = System.IO.File.OpenRead("App_Data/students.xml");
-            students = (List<NewStudent>)xmlSerializer.Deserialize(stream);
-            stream.Close();
+            GetAllStudents();
+            List<StudentInfo> studentInfo = new List<StudentInfo>();
+            foreach (var student in students)
+            {
+                AddressItem addressItem = addressBusiness.GetAddressItem(student.AddressId);
+                studentInfo.Add(new StudentInfo { Student = student, Address = addressItem });
+            }
+            return studentInfo;
+        }
+
+        public List<NewStudent> GetAllStudents()
+        {
+            try
+            {
+                FileStream stream = System.IO.File.OpenRead("App_Data/new_students.xml");
+                students = (List<NewStudent>)xmlSerializer.Deserialize(stream);
+                stream.Close();
+            }
+            catch (Exception)
+            {
+                students = new List<NewStudent>();
+            }
+
             return students;
         }
 
@@ -40,24 +65,23 @@ namespace QLHS.Controllers
         {
             if (students != null && students.Count > 0)
             {
-                FileStream stream = new FileStream("App_Data/students.xml", FileMode.Create);
+                FileStream stream = new FileStream("App_Data/new_students.xml", FileMode.Create);
                 xmlSerializer.Serialize(stream, students);
                 stream.Close();
             }
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<NewStudent>>> GetStudent()
+        public async Task<ActionResult<IEnumerable<StudentInfo>>> GetStudent()
         {
-            return getAllStudents();
+            return GetAllStudentInfos();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<NewStudent>> GetStudentById(long id)
+        public async Task<ActionResult<StudentInfo>> GetStudentById(long id)
         {
-            students = getAllStudents();
-            var student = students.Find(st => st.Id == id);
-
+            GetAllStudents();
+            var student = studentInfos.Find(st => st.Student.Id == id);
             if (student == null)
             {
                 return NotFound();
@@ -68,7 +92,7 @@ namespace QLHS.Controllers
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(NewStudent student)
         {
-            students = getAllStudents();
+            GetAllStudents();
             if (students == null || students.Count == 0)
             {
                 student.Id = 0;
@@ -86,7 +110,7 @@ namespace QLHS.Controllers
             {
                 return BadRequest();
             }
-            students = getAllStudents();
+            GetAllStudents();
 
             int index = students.FindIndex(s => s.Id == id);
             if (index >= 0)
@@ -101,7 +125,7 @@ namespace QLHS.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteStudent(long id)
         {
-            students = getAllStudents();
+            GetAllStudents();
             var student = students.Find(st => st.Id == id);
             if (student == null) return NotFound();
             students.Remove(student);
