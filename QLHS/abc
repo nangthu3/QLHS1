@@ -1,0 +1,342 @@
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Collections.Generic;
+
+namespace TestProject.ExcelUtils.OpenXml
+{
+    public class OpenXmlReadExcel
+    {
+        public void OpenWorkbook(string path) { }
+        public void ProcessSheet() { }
+        public void ProcessRow() { }
+        public void ProcessCell()
+        {
+
+        }
+
+        public void GetCellValue()
+        {
+
+        }
+
+        public void GetCellType(WorkbookPart workbookPart, Cell cell, WorksheetPart worksheetPart)
+        {
+            // get border, font, fill, width, rowsapn, colspan
+            //WorkbookStylesPart stylesPart = SpreadsheetReader
+            var workbookStylesPart = workbookPart.WorkbookStylesPart;
+            var styleSheet = workbookStylesPart.Stylesheet;
+            //var fills = styleSheet.Fills;
+            //var borders = styleSheet.Borders;
+            //var fonts = styleSheet.Fonts;
+            
+            int cellStyleIndex;
+            if (cell.StyleIndex == null)
+            {
+                cellStyleIndex = 0;
+            }
+            else cellStyleIndex = (int)cell.StyleIndex.Value;
+
+            CellFormat cellFormat = (CellFormat)styleSheet.CellFormats.ChildElements[cellStyleIndex];
+
+
+            Fill fill = (Fill)styleSheet.Fills.ChildElements[(int)cellFormat.FillId.Value];
+            PatternFill patternFill = fill.PatternFill;
+            if (patternFill.PatternType != PatternValues.None)
+            {
+                if (patternFill.ForegroundColor.Auto != null)
+                {
+
+                }
+                else if (patternFill.ForegroundColor.Rgb != null)
+                {
+
+                }
+                else if (patternFill.ForegroundColor.Indexed != null)
+                {
+
+                }
+                else if (patternFill.ForegroundColor.Theme != null)
+                {
+
+                }
+                else if (patternFill.ForegroundColor.Tint != null)
+                {
+
+                }
+
+                // tuong tu voi backgroud color
+            }
+
+
+            Border border = (Border)styleSheet.Borders.ChildElements[(int)cellFormat.BorderId.Value];
+            if (border.TopBorder != null)
+            {
+                var topBorder = border.TopBorder;
+                //topBorder.Style;
+                var boderColor = topBorder.Color;
+            }
+            if (border.LeftBorder != null)
+            {
+
+            }
+            if (border.BottomBorder != null)
+            {
+
+            }
+            if (border.RightBorder != null)
+            {
+
+            }
+            if (border.StartBorder != null)
+            {
+
+            }
+            if (border.EndBorder != null)
+            {
+
+            }
+            if (border.DiagonalBorder != null)
+            {
+
+            }
+            if (border.VerticalBorder != null)
+            {
+
+            }
+            if (border.HorizontalBorder != null)
+            {
+
+            }
+
+
+            Font font = (Font)styleSheet.Fonts.ChildElements[(int)cellFormat.FontId.Value];
+            FontSize fontSize =  font.FontSize;
+            FontName fontName = font.FontName;
+            FontCharSet fontCharSet = font.FontCharSet;
+            VerticalTextAlignment verticalTextAlignment = font.VerticalTextAlignment;
+            Bold bold = font.Bold;
+            Italic italic = font.Italic;
+            Underline underline = font.Underline;
+
+
+            MergeCells merge = new List<MergeCells>(worksheetPart.Worksheet.Descendants<MergeCells>())[0];
+            var lstMergeCell = new List<MergeCell>((IEnumerable<MergeCell>)merge.ChildElements);
+
+            foreach(MergeCell mc in lstMergeCell)
+            {
+                //mc.
+            }
+        }
+    }
+}
+
+
+using System;
+using System.Text.RegularExpressions;
+
+namespace TestExcel.OpenXmlUitl.Util
+{
+
+    // Todo: Any row or column index start at 1;
+
+    public class CellUtil
+    {
+        public static int GetColIndexFromColChars(string colChars)
+        {
+            char[] cs = colChars.ToCharArray();
+            var len = cs.Length;
+            if (len == 1) return cs[0] + 1 - 'A';
+            else if (len == 2) return ((int)cs[len - 2] + 1 - (int)'A') * 27 + ((int)cs[len - 1] + 1 - (int)'A');
+            else return 0;
+        }
+
+        public static int GetRowIndexFromCellName(string cellName)
+        {
+            Regex regex = new Regex("[1-9]+");
+            Match match = regex.Match(cellName);
+            return int.Parse(match.Value);
+        }
+
+        public static int GetColIndexFromCellName(string cellName)
+        {
+            return GetColIndexFromColChars(GetColChars(cellName));
+        }
+
+        public static string GetColChars(string cellName)
+        {
+            Regex regex = new Regex("[A-Za-z]+");
+            Match match = regex.Match(cellName);
+            return match.Value;
+        }
+
+        public static void GetMergeCellRange(out int rowSpan, out int colSpan, string value)
+        {
+            string[] cellNames = value.Split(":");
+            if (cellNames.Length == 2)
+            {
+                var startColIndex = GetColIndexFromCellName(cellNames[0]);
+                var endColIndex = GetColIndexFromCellName(cellNames[1]);
+                var startRowIndex = GetRowIndexFromCellName(cellNames[0]);
+                var endRowIndex = GetRowIndexFromCellName(cellNames[1]);
+                rowSpan = endRowIndex + 1 - startRowIndex;
+                colSpan = endColIndex + 1 - startColIndex;
+            }
+            else
+            {
+                rowSpan = -1;
+                colSpan = -1;
+            }
+        }
+
+        public static bool GetMergeCellRange(out int rowSpan, out int colSpan, string value, string cellName)
+        {
+            string[] cellNames = value.Split(":");
+            if (cellNames.Length == 2)
+            {
+                if (!cellNames[0].Equals(cellName))
+                {
+                    rowSpan = -1;
+                    colSpan = -1;
+                    return false;
+                }
+                var startColIndex = GetColIndexFromCellName(cellNames[0]);
+                var endColIndex = GetColIndexFromCellName(cellNames[1]);
+                var startRowIndex = GetRowIndexFromCellName(cellNames[0]);
+                var endRowIndex = GetRowIndexFromCellName(cellNames[1]);
+                rowSpan = endRowIndex + 1 - startRowIndex;
+                colSpan = endColIndex + 1 - startColIndex;
+                return true;
+            }
+            else
+            {
+                rowSpan = -1;
+                colSpan = -1;
+                return false;
+            }
+        }
+
+        internal static void GetSheetRange(string value, out long colCount, out long rowCount)
+        {
+            string[] cellNames = value.Split(":");
+            var startColIndex = GetColIndexFromCellName(cellNames[0]);
+            var endColIndex = GetColIndexFromCellName(cellNames[1]);
+            var startRowIndex = GetRowIndexFromCellName(cellNames[0]);
+            var endRowIndex = GetRowIndexFromCellName(cellNames[1]);
+            colCount = endColIndex + 1 - startColIndex;
+            rowCount = endRowIndex + 1 - startRowIndex;
+        }
+
+        internal static bool CellInMergeCellRange(string cellName, string mergeCellRange)
+        {
+            string[] cellNames = mergeCellRange.Split(":");
+            if (cellNames.Length == 2)
+            {
+                var startColIndex = GetColIndexFromCellName(cellNames[0]);
+                var endColIndex = GetColIndexFromCellName(cellNames[1]);
+                var startRowIndex = GetRowIndexFromCellName(cellNames[0]);
+                var endRowIndex = GetRowIndexFromCellName(cellNames[1]);
+                var cellColIndex = GetColIndexFromCellName(cellName);
+                var cellRowIndex = GetRowIndexFromCellName(cellName);
+                return cellColIndex >= startColIndex && cellColIndex <= endColIndex
+                    && cellRowIndex >= startRowIndex && cellRowIndex <= endRowIndex;
+            }
+            return false;
+        }
+
+        internal static string GetCellName(int rowIndex, int colIndex)
+        {
+            return ((char)(colIndex - 1 + (int)'A')).ToString() + rowIndex.ToString();
+        }
+
+        internal static string GetCharsCol(int colIndex)
+        {
+            return ((char)(colIndex - 1 + (int)'A')).ToString();
+        }
+    }
+}
+
+
+using System.Xml;
+
+namespace TestProject.ExcelUtils.Model
+{
+    public class HtmlUtil
+    {
+        public XmlDocument Doc { get; }
+        public XmlElement Root { get; }
+        public XmlElement Body { get; }
+        public XmlElement Head { get; }
+        public HtmlUtil()
+        {
+            Doc = new XmlDocument();
+            var docType = Doc.CreateDocumentType("html", "", "", "");
+            Doc.AppendChild(docType);
+
+            Root = Doc.CreateElement("html");
+            Doc.AppendChild(Root);
+
+            Head = Doc.CreateElement("head");
+            Root.AppendChild(Head);
+
+            var meta = Doc.CreateElement("meta");
+            meta.InnerText = "";
+            meta.SetAttribute("charset", "UTF-8");
+            Head.AppendChild(meta);
+
+            var style = Doc.CreateElement("style");
+            style.InnerText = "td { height: 15pt; width: 8.43ch}";
+            Head.AppendChild(style);
+
+            Body = Doc.CreateElement("body");
+            Root.AppendChild(Body);
+        }
+
+        public void AddScriptToHead(string scriptSource)
+        {
+            var jQueryElement = Doc.CreateElement("script");
+            jQueryElement.SetAttribute("src", scriptSource);
+            jQueryElement.InnerText = "";
+            Head.AppendChild(jQueryElement);
+        }
+
+        public XmlText CreateTextNode(string text)
+        {
+            return Doc.CreateTextNode(text);
+        }
+
+        public XmlElement CreateTable()
+        {
+            var table = Doc.CreateElement("table");
+            table.InnerText = "";
+            return table;
+        }
+
+        public XmlElement CreateTableRow()
+        {
+            var tr = Doc.CreateElement("tr");
+            tr.InnerText = "";
+            return tr;
+        }
+
+        public XmlElement CreateTableCell()
+        {
+            var td = Doc.CreateElement("td");
+            td.InnerText = "";
+            return td;
+        }
+
+        public XmlElement CreateBlock()
+        {
+            var div = Doc.CreateElement("div");
+            div.InnerText = "";
+            return div;
+        }
+
+        public XmlElement CreateTag(string tagName)
+        {
+            var tag = Doc.CreateElement(tagName);
+            tag.InnerText = "";
+            return tag;
+        }
+    }
+}
