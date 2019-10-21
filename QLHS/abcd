@@ -1,0 +1,558 @@
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using TestExcel.OpenXmlUitl;
+using TestExcel.OpenXmlUitl.Util;
+using TestProject.ExcelUtils.Model;
+
+namespace TestProject.Controllers.Test
+{
+    [Route("api/[controller]")]
+    [ApiController]
+
+    public class OpenXmlController : Controller
+    {
+        private readonly string[] IndexedColor = { "00000000","00FFFFFF","00FF0000","0000FF00","000000FF","00FFFF00",
+            "00FF00FF","0000FFFF","00000000","00FFFFFF","00FF0000","0000FF00","000000FF","00FFFF00","00FF00FF","0000FFFF",
+            "00800000","00008000","00000080","00808000","00800080","00008080","00C0C0C0","00808080","009999FF","00993366",
+            "00FFFFCC","00CCFFFF","00660066","00FF8080","000066CC","00CCCCFF","00000080","00FF00FF","00FFFF00","0000FFFF",
+            "00800080","00800000","00008080","000000FF","0000CCFF","00CCFFFF","00CCFFCC","00FFFF99","0099CCFF","00FF99CC",
+            "00CC99FF","00FFCC99","003366FF","0033CCCC","0099CC00","00FFCC00","00FF9900","00FF6600","00666699","00969696",
+            "00003366","00339966","00003300","00333300","00993300","00993366","00333399","00333333", "000", "000" };
+
+        private readonly double DefaultRowHeight = 15.00;
+        private readonly double DefaultColumnWidth = 8.43;
+
+        [HttpGet()]
+        public IActionResult Index()
+        {
+            HtmlUtil htmlUtil = new HtmlUtil();
+            var table = htmlUtil.CreateTable();
+            table.SetAttribute("style", "border-collapse: collapse");
+            htmlUtil.Body.AppendChild(table);
+
+            //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Resources/Book1.xlsx");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Resources/GD.xlsx");
+            using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Open(filePath, false))
+            {
+                double height = 0;
+                int cellStyleIndex;
+                //int rowSpan, colSpan;
+                //double mergeCellW, mergeCellH;
+                long rowCount, colCount;
+                List<string> removeCells;
+                List<CellModel> cellInMergs;
+                WorkbookPart workbookPart = spreadsheetDocument.WorkbookPart;
+                WorksheetPart worksheetPart = workbookPart.WorksheetParts.First();
+                SheetData sheetData = worksheetPart.Worksheet.Elements<SheetData>().First();
+                var dimension = worksheetPart.Worksheet.Elements<SheetDimension>().First();
+                var columns = worksheetPart.Worksheet.Elements<Columns>();
+                var mergeCells = worksheetPart.Worksheet.Elements<MergeCells>();
+                var workbookStylesPart = workbookPart.WorkbookStylesPart;
+                var styleSheet = workbookStylesPart.Stylesheet;
+
+                CellUtil.GetSheetRange(dimension.Reference.Value, out colCount, out rowCount);
+
+                if (mergeCells != null) GetMergeCell(mergeCells.First(), out removeCells, out cellInMergs);
+
+                for (int i = 1; i <= rowCount; i++)
+                {
+                    var row = worksheetPart.Worksheet.Descendants<Row>()
+                        .Where(r => r.RowIndex == i).FirstOrDefault();
+                    if (row != null && row.CustomHeight != null && row.CustomHeight.Value)
+                    {
+                        height = row.Height.Value;
+                    }
+                    else
+                    {
+                        height = DefaultRowHeight;
+                    }
+                    var tableRow = htmlUtil.CreateTableRow();
+                    table.AppendChild(tableRow);
+                    for (int j = 1; j <= colCount; j++)
+                    {
+                        var cellName = CellUtil.GetCellName(i, j);
+                        var cell = worksheetPart.Worksheet.Descendants<Cell>()
+                            .Where(c => c.CellReference == cellName).FirstOrDefault();
+                        var tableCell = htmlUtil.CreateTableCell();
+                        tableRow.AppendChild(tableCell);
+
+                        if (cellInMergs != null && cellInMergs.Count > 0)
+                        {
+
+                        }
+
+                        if (cell != null)
+                        {
+                            StringBuilder stringBuilder = new StringBuilder("");
+                            if (cell.StyleIndex == null) cellStyleIndex = 0;
+                            else cellStyleIndex = (int)cell.StyleIndex.Value;
+
+                            CellFormat cellFormat = (CellFormat)styleSheet.CellFormats.ChildElements[cellStyleIndex];
+                            tableCell.InnerText = GetCellValue(spreadsheetDocument, cell);
+                            tableCell.SetAttribute("style", GetCellStyle(workbookPart, cell, height, columns));
+                            //if (mergeCells != null)
+                            //{
+                            //    foreach (MergeCell mergeCell in mergeCells.First().Elements<MergeCell>())
+                            //    {
+                            //        var rf = mergeCell.Reference;
+                            //        if (rf != null)
+                            //        {
+                            //            var refVal = rf.Value;
+                            //            string[] cellNames = refVal.Split(":");
+                            //            if (cellNames.Length == 2)
+                            //            {
+                            //                var startColIndex = CellUtil.GetColIndexFromCellName(cellNames[0]);
+                            //                var endColIndex = CellUtil.GetColIndexFromCellName(cellNames[1]);
+                            //                var startRowIndex = CellUtil.GetRowIndexFromCellName(cellNames[0]);
+                            //                var endRowIndex = CellUtil.GetRowIndexFromCellName(cellNames[1]);
+                            //                if (cellNames[0].Equals(cellName))
+                            //                {
+                            //                    rowSpan = endRowIndex + 1 - startRowIndex;
+                            //                    colSpan = endColIndex + 1 - startColIndex;
+                            //                    tableCell.SetAttribute("rowspan", rowSpan.ToString());
+                            //                    tableCell.SetAttribute("colspan", colSpan.ToString());
+                            //                }
+                            //                else
+                            //                {
+                            //                    var cellColIndex = CellUtil.GetColIndexFromCellName(cellName);
+                            //                    var cellRowIndex = CellUtil.GetRowIndexFromCellName(cellName);
+                            //                    if (cellColIndex >= startColIndex && cellColIndex <= endColIndex
+                            //                        && cellRowIndex >= startRowIndex && cellRowIndex <= endRowIndex)
+                            //                    {
+                            //                        try
+                            //                        {
+                            //                            tableRow.RemoveChild(tableCell);
+                            //                        }
+                            //                        catch { }
+                            //                    }
+                            //                }
+                            //            }
+                            //        }
+                            //    }
+
+                            //    //if (CheckIsMergeCell(cell, mergeCells.First(), out rowSpan, out colSpan, out mergeCellH, out mergeCellW))
+                            //    //{
+                            //    //    if (rowSpan != -1 && colSpan != -1)
+                            //    //    {
+                            //    //        tableCell.SetAttribute("rowspan", rowSpan.ToString());
+                            //    //        tableCell.SetAttribute("colspan", colSpan.ToString());
+                            //    //    }
+                            //    //    else tableRow.RemoveChild(tableCell);
+                            //    //}
+                            //}
+                        }
+                    }
+                }
+
+                //foreach (Row r in sheetData.Elements<Row>())
+                //{
+                //    if (r.CustomHeight != null && r.CustomHeight.Value)
+                //    {
+                //        height = r.Height.Value;
+                //    }
+                //    else
+                //    {
+                //        height = DefaultRowHeight;
+                //    }
+                //    var tableRow = htmlUtil.CreateTableRow();
+                //    table.AppendChild(tableRow);
+                //    foreach (Cell c in r.Elements<Cell>())
+                //    {
+                //        var tableCell = htmlUtil.CreateTableCell();
+                //        tableRow.AppendChild(tableCell);
+
+                //        StringBuilder stringBuilder = new StringBuilder("");
+                //        if (c.StyleIndex == null) cellStyleIndex = 0;
+                //        else cellStyleIndex = (int)c.StyleIndex.Value;
+
+                //        CellFormat cellFormat = (CellFormat)styleSheet.CellFormats.ChildElements[cellStyleIndex];
+                //        tableCell.InnerText = GetCellValue(spreadsheetDocument, c);
+                //        tableCell.SetAttribute("style", GetCellStyle(workbookPart, c, height, columns));
+                //        if (mergeCells != null)
+                //        {
+                //            if (CheckIsMergeCell(c, mergeCells.First(), out rowSpan, out colSpan))
+                //            {
+                //                if (rowSpan != -1 && colSpan != -1)
+                //                {
+                //                    tableCell.SetAttribute("rowspan", rowSpan.ToString());
+                //                    tableCell.SetAttribute("colspan", colSpan.ToString());
+                //                }
+                //                else tableRow.RemoveChild(tableCell);
+                //            }
+                //        }
+                //    }
+                //}
+                return new ContentResult()
+                {
+                    ContentType = "text/html",
+                    Content = htmlUtil.Doc.OuterXml
+                };
+            }
+        }
+
+        private void GetMergeCell(MergeCells mergeCells, out List<string> removeCells, out List<CellModel> cellInMergs)
+        {
+            removeCells = new List<string>();
+            cellInMergs = new List<CellModel>();
+            foreach (MergeCell mergeCell in mergeCells.Elements<MergeCell>())
+            {
+                var rf = mergeCell.Reference;
+                if (rf != null)
+                {
+                    var refVal = rf.Value;
+                    string[] cellNames = refVal.Split(":");
+                    if (cellNames.Length == 2)
+                    {
+                        var startColIndex = CellUtil.GetColIndexFromCellName(cellNames[0]);
+                        var endColIndex = CellUtil.GetColIndexFromCellName(cellNames[1]);
+                        var startRowIndex = CellUtil.GetRowIndexFromCellName(cellNames[0]);
+                        var endRowIndex = CellUtil.GetRowIndexFromCellName(cellNames[1]);
+                        CellModel cellModel = new CellModel();
+                        cellModel.CellName = cellNames[0];
+                        cellModel.ColIndex = CellUtil.GetColIndexFromCellName(cellNames[0]);
+                        cellModel.RowIndex = CellUtil.GetRowIndexFromCellName(cellNames[0]);
+                        cellModel.RowSpan = endRowIndex + 1 - startRowIndex;
+                        cellModel.ColSpan = endColIndex + 1 - startColIndex;
+
+                        cellInMergs.Add(cellModel);
+                        if (startColIndex != endColIndex && startRowIndex != endRowIndex)
+                        {
+                            for (int i = startRowIndex; i <= endRowIndex; i++)
+                            {
+                                for (int j = startColIndex; j <= endColIndex; j++)
+                                {
+                                    var cName = CellUtil.GetCellName(i, j);
+                                    if (!cName.Equals(cellNames[0]))
+                                    {
+                                        removeCells.Add(cName);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //static bool CheckIsMergeCell(Cell c, MergeCells mergeCells, out int rowSpan, out int colSpan, out double mergeCellH)
+        //{
+        //    var cellName = c.CellReference.Value;
+        //    Console.WriteLine(cellName);
+        //    foreach (MergeCell mergeCell in mergeCells.Elements<MergeCell>())
+        //    {
+        //        var rf = mergeCell.Reference;
+        //        if (rf != null)
+        //        {
+        //            var refVal = rf.Value;
+        //            if (CellUtil.GetMergeCellRange(out rowSpan, out colSpan, refVal, cellName))
+        //            {
+        //                return true;
+        //            }
+        //            else if (CellUtil.CellInMergeCellRange(cellName, refVal))
+        //            {
+        //                rowSpan = -1;
+        //                colSpan = -1;
+        //                return true;
+        //            }
+        //        }
+        //    }
+        //    rowSpan = -1;
+        //    colSpan = -1;
+        //    return false;
+        //}
+
+        string GetCellValue(SpreadsheetDocument document, Cell cell)
+        {
+            if (cell.CellValue == null) return "";
+            string value = cell.CellValue.InnerXml;
+            SharedStringTablePart stringTablePart = document.WorkbookPart.SharedStringTablePart;
+
+            if (cell.DataType != null)
+            {
+                if (cell.DataType.Value == CellValues.SharedString)
+                {
+                    return stringTablePart.SharedStringTable.ChildElements[int.Parse(value)].InnerText;
+                }
+                else if (cell.DataType.Value == CellValues.Boolean)
+                {
+                    return cell.CellValue.InnerText.Equals("1") ? "TRUE" : "FALSE";
+                }
+            }
+            return value;
+        }
+
+        string GetCellStyle(WorkbookPart workbookPart, Cell cell, double height, IEnumerable<Columns> columns)
+        {
+            StringBuilder stringBuilder = new StringBuilder("");
+            var workbookStylesPart = workbookPart.WorkbookStylesPart;
+            var styleSheet = workbookStylesPart.Stylesheet;
+            int cellStyleIndex;
+            if (cell.StyleIndex == null)
+            {
+                cellStyleIndex = 0;
+            }
+            else
+            {
+                cellStyleIndex = (int)cell.StyleIndex.Value;
+            }
+
+            CellFormat cellFormat = (CellFormat)styleSheet.CellFormats.ChildElements[cellStyleIndex];
+
+            stringBuilder.Append(GetCellBackground(workbookPart, styleSheet, cellFormat));
+            stringBuilder.Append(GetCellFont(workbookPart, styleSheet, cellFormat));
+            stringBuilder.Append(GetCellBorder(workbookPart, styleSheet, cellFormat));
+            stringBuilder.Append(GetCellTextStyle(workbookPart, cell, cellFormat));
+            stringBuilder.Append(string.Format("height: {0}pt;", height));
+
+            var cellReference = cell.CellReference.Value;
+            var colIndex = CellUtil.GetColIndexFromCellName(cellReference);
+            if (columns != null)
+            {
+                foreach (Column column in columns.First().Elements<Column>())
+                {
+                    if (colIndex >= column.Min && colIndex <= column.Max)
+                    {
+                        stringBuilder.Append(string.Format("width: {0}ch;", column.Width));
+                    }
+                    else
+                    {
+                        stringBuilder.Append(string.Format("width: {0}ch;", DefaultColumnWidth));
+                    }
+                }
+            }
+
+            return stringBuilder.ToString();
+        }
+
+        private string GetCellTextStyle(WorkbookPart workbookPart, Cell cell, CellFormat cellFormat)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            var alignment = cellFormat.Alignment;
+            var datatype = cell.DataType;
+            if (alignment != null)
+            {
+                var horizontalAlignment = alignment.Horizontal;
+                var verticalAligment = alignment.Vertical;
+
+                if (horizontalAlignment != null)
+                {
+                    if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.General))
+                    {
+                        stringBuilder.Append("text-align: left;");
+                    }
+                    else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Left))
+                    {
+                        stringBuilder.Append("text-align: left;");
+                    }
+                    else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Center))
+                    {
+                        stringBuilder.Append("text-align: center;");
+                    }
+                    else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Right))
+                    {
+                        stringBuilder.Append("text-align: right;");
+                    }
+                    //else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Fill))
+                    //{
+
+                    //}
+                    else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Justify))
+                    {
+                        stringBuilder.Append("text-align: justify;");
+                    }
+                    //else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.CenterContinuous))
+                    //{
+
+                    //}
+                    //else if (horizontalAlignment.Value.Equals(HorizontalAlignmentValues.Distributed))
+                    //{
+
+                    //}
+                }
+
+                if (verticalAligment != null)
+                {
+                    if (verticalAligment.Value.Equals(VerticalAlignmentValues.Top))
+                    {
+                        stringBuilder.Append("vertical-align: top;");
+                    }
+                    else if (verticalAligment.Value.Equals(VerticalAlignmentValues.Center))
+                    {
+                        stringBuilder.Append("vertical-align: middle;");
+                    }
+                    else if (verticalAligment.Value.Equals(VerticalAlignmentValues.Bottom))
+                    {
+                        stringBuilder.Append("vertical-align: bottom;");
+                    }
+                    //else if (verticalAligment.Value.Equals(VerticalAlignmentValues.Justify))
+                    //{
+                    //    stringBuilder.Append("vertical-align: bottom;");
+                    //}
+                    else if (verticalAligment.Value.Equals(VerticalAlignmentValues.Distributed))
+                    {
+                        stringBuilder.Append("vertical-align: bottom;");
+                    }
+                }
+                else
+                {
+                    stringBuilder.Append("vertical-align: bottom;");
+                }
+            }
+            else
+            {
+                decimal d;
+                if (datatype != null && datatype.Equals(CellValues.Boolean))
+                {
+                    stringBuilder.Append("text-align: center;");
+                }
+                else if (datatype == null && decimal.TryParse(cell.InnerText, out d))
+                {
+                    stringBuilder.Append("text-align: right;");
+                }
+                stringBuilder.Append("vertical-align: bottom;");
+            }
+            return stringBuilder.ToString();
+        }
+
+        string GetCellBackground(WorkbookPart workbookPart, Stylesheet styleSheet, CellFormat cellFormat)
+        {
+            StringBuilder bg = new StringBuilder("");
+            var fill = (Fill)styleSheet.Fills.ChildElements[(int)cellFormat.FillId.Value];
+            var patternFill = fill.PatternFill;
+            if (patternFill.PatternType != PatternValues.None)
+            {
+                var patternType = patternFill.PatternType;
+                if (patternType != null && patternType.Equals(PatternValues.Solid))
+                {
+                    var foregroundColor = patternFill.ForegroundColor;
+                    bg.Append(string.Format("background-color: #{0};", SimplifyColor(GetColor(foregroundColor, workbookPart, true))));
+                }
+                else
+                {
+                    var backgroundColor = patternFill.BackgroundColor;
+                    bg.Append(string.Format("background-color: #{0};", SimplifyColor(GetColor(backgroundColor, workbookPart, true))));
+                }
+            }
+            return bg.ToString();
+        }
+
+        string GetCellFont(WorkbookPart workbookPart, Stylesheet styleSheet, CellFormat cellFormat)
+        {
+            StringBuilder stringBuilder = new StringBuilder("");
+            Font font = (Font)styleSheet.Fonts.ChildElements[(int)cellFormat.FontId.Value];
+            FontSize fontSize = font.FontSize;
+            FontName fontName = font.FontName;
+            Bold bold = font.Bold;
+            Italic italic = font.Italic;
+            var underline = font.Underline;
+            Color color = font.Color;
+            if (fontName != null) stringBuilder.Append(string.Format("font-family: {0};", fontName.Val));
+            if (fontSize != null) stringBuilder.Append(string.Format("font-size: {0}pt;", fontSize.Val));
+            if (bold != null) stringBuilder.Append("font-weight: bold;");
+            if (italic != null) stringBuilder.Append("font-style: italic;");
+            if (underline != null) stringBuilder.Append("text-decoration: underline;");
+            if (color != null) stringBuilder.Append(string.Format("color: #{0};", GetColor(color, workbookPart, false)));
+            return stringBuilder.ToString();
+        }
+
+        string GetBorder(BorderPropertiesType border, WorkbookPart workbookPart)
+        {
+            var style = border.Style;
+            var borderColor = GetColor(border.Color, workbookPart, false);
+            if (style != null && border != null)
+            {
+                return string.Format("1px {0} #{1}", "solid", borderColor);
+            }
+            return "";
+        }
+
+        string GetCellBorder(WorkbookPart workbookPart, Stylesheet styleSheet, CellFormat cellFormat)
+        {
+            StringBuilder b = new StringBuilder("");
+            Border border = (Border)styleSheet.Borders.ChildElements[(int)cellFormat.BorderId.Value];
+            if (border.TopBorder != null)
+            {
+                var currentBorder = border.TopBorder;
+                b.Append(string.Format("border-top: {0};", GetBorder(currentBorder, workbookPart)));
+            }
+            if (border.LeftBorder != null)
+            {
+                var currentBorder = border.TopBorder;
+                b.Append(string.Format("border-left: {0};", GetBorder(currentBorder, workbookPart)));
+            }
+            if (border.BottomBorder != null)
+            {
+                var currentBorder = border.TopBorder;
+                b.Append(string.Format("border-bottom: {0};", GetBorder(currentBorder, workbookPart)));
+            }
+            if (border.RightBorder != null)
+            {
+                var currentBorder = border.TopBorder;
+                b.Append(string.Format("border-right: {0};", GetBorder(currentBorder, workbookPart)));
+            }
+            return b.ToString();
+        }
+
+        string GetColor(ColorType color, WorkbookPart workbookPart, bool isBackground)
+        {
+            if (color == null) return "null";
+            if (color.Auto != null)
+            {
+                return isBackground ? "FFF" : "000";
+            }
+            else if (color.Rgb != null)
+            {
+                return color.Rgb.Value;
+            }
+            else if (color.Indexed != null)
+            {
+                if (color.Indexed.Value >= 64)
+                {
+                    return isBackground ? "FFF" : "000";
+                }
+                else
+                {
+                    return IndexedColor[(int)color.Indexed.Value];
+                }
+            }
+            else if (color.Theme != null)
+            {
+                DocumentFormat.OpenXml.Drawing.Color2Type c2t
+                    = (DocumentFormat.OpenXml.Drawing.Color2Type)workbookPart.ThemePart.Theme.ThemeElements.ColorScheme.ChildElements[(int)color.Theme.Value];
+
+                if (c2t.RgbColorModelHex != null)
+                {
+                    return c2t.RgbColorModelHex.Val;
+                }
+            }
+            else if (color.Tint != null)
+            {
+                return isBackground ? "FFF" : "000";
+            }
+            return isBackground ? "FFF" : "000";
+        }
+
+        string SimplifyColor(string color)
+        {
+            if (!string.IsNullOrEmpty(color) && color.Length == 8)
+            {
+                return color.Substring(2, 6) + color.Substring(0, 2);
+            }
+            else
+            {
+                return color;
+            }
+        }
+
+        void GetHorizontalAlignment(DocumentFormat.OpenXml.EnumValue<HorizontalAlignmentValues> horizontalAlignment)
+        {
+            //if()
+        }
+    }
+}
